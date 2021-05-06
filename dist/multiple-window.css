@@ -1,8 +1,6 @@
 /* 多窗口卡片盒子 */
 .mosaic {
   background-color: var(--main-background-color) !important;
-  /* autoprefixer: on */
-  transform: rotate(20deg);
 }
 .mosaic-root {
   inset: 0px;

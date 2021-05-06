@@ -7,48 +7,43 @@
 }
 .mosaic-tile {
   margin: 0;
-
-  /*多窗口时占满宽度*/
-  &:not(:nth-child(1):nth-last-child(1)) #document {
+}
+/*多窗口时占满宽度*/
+.mosaic-tile:not(:nth-child(1):nth-last-child(1)) #document {
     max-width: unset;
   }
-
-  &:not(:first-child:last-child) {
+.mosaic-tile:not(:first-child:last-child) {
     padding: var(--mosaic-tile-padding);
   }
-
-  .mosaic-window {
+.mosaic-tile .mosaic-window {
     box-shadow: 0 0 20px -6px rgb(0 0 0 / 40%);
   }
-
-  /* 美化多窗口toolbar */
-  .mosaic-window-toolbar {
+/* 美化多窗口toolbar */
+.mosaic-tile .mosaic-window-toolbar {
     position: absolute;
     right: 8px;
     top: 4px;
     box-shadow: 0 0 10px -3px rgb(0 0 0 / 55%), 0 0 1px 0px rgb(0 0 0 / 55%) !important;
     opacity: 0;
     width: 50px;
-
-    &:hover {
+  }
+.mosaic-tile .mosaic-window-toolbar:hover {
       opacity: 1;
       width: unset;
     }
-
-    .mosaic-window-controls.bp3-button-group > button {
+.mosaic-tile .mosaic-window-toolbar .mosaic-window-controls.bp3-button-group > button {
       padding: 2px;
       background: #fff;
       border: 0;
       cursor: pointer;
     }
-
-    .mosaic-window-title {
+.mosaic-tile .mosaic-window-toolbar .mosaic-window-title {
       display: flex;
       align-items: center;
       justify-content: center;
       padding-left: 8px;
-
-      &::before {
+    }
+.mosaic-tile .mosaic-window-toolbar .mosaic-window-title::before {
         content: "\f0b2";
         display: inline-block;
         opacity: 1;
@@ -63,19 +58,15 @@
         font-size: 1em;
         color: rgb(116, 120, 120);
       }
-    }
-  }
-}
-
 /*窗口间隙*/
 .mosaic-split.-row,
 .mosaic-split.-column {
   background: var(--main-background-color);
-  &:hover {
+}
+.mosaic-split.-row:hover, .mosaic-split.-column:hover {
     background: #8d7a7a !important;
     z-index: 9;
   }
-}
 .mosaic-split:hover .mosaic-split-line {
   box-shadow: none !important;
 }

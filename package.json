@@ -1,7 +1,7 @@
 {
   "name": "rem-theme",
   "scripts": {
-    "build": "npx postcss src/**/*.less --dir dist --no-map --env production"
+    "build": "rm -rf dist && npx postcss src/**/*.less -d dist --ext css dist --no-map --env production"
   },
   "dependencies": {
     "less": "^4.1.1",
