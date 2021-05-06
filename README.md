@@ -31,8 +31,7 @@ remnote 主题
 
 # 按需引入的主题小分类
 
-## 多窗口
-
-```css
-@import url("https://remnote-theme.vercel.app/multiple-window.css");
-```
+- [多窗口](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/multiple-window.css)
+  ```css
+  @import url("https://remnote-theme.vercel.app/multiple-window.css");
+  ```
