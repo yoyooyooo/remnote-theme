@@ -16,7 +16,7 @@ remnote 主题
 @import url("https://cdn.jsdelivr.net/gh/yoyooyooo/remnote-theme/dist/multiple-window.css");
 ```
 
-其中的 `multiple-window` 按需求改成对应的主题小分类的名称，[参考](https://github.com/yoyooyooo/remnote-theme#按需引入的主题小分类)
+其中的 `multiple-window` 按需求改成对应的主题小分类的名称，参考[参考主题小分类](https://github.com/yoyooyooo/remnote-theme#按需引入的主题小分类)
 
 ## 主题配置
 
@@ -26,7 +26,7 @@ remnote 主题
 :root {
   /* 主背景色 */
   --main-background-color: rgb(211 211 211 / 23%);
-  /* 多窗口——间距 */
+  /* 多窗口各窗口的间距 */
   --mosaic-tile-padding: 4px;
 }
 ```
