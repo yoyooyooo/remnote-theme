@@ -37,4 +37,7 @@ remnote 主题
 
 # 按需引入的主题小分类
 
-- [多窗口](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/multiple-window.css): multiple-window
+- [多窗口](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/multiple-window.css): `multiple-window`，优化工具条样式，调整窗口间距以及拖动窗口大小的动作条的宽度和样式
+- [power-ups tag](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/power-ups-tag.css): `power-ups-tag`，`Power-ups` 标签平时隐藏，hover 和 focus 时显示
+- [tag](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/tag.css): `tag`，标签美化
+- [tag](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/rem-reference.css): `rem-reference`，双链`[[...]]`美化，显示 hover 时预览原文的高度(当引用代码块的时候内容过大，影响右键菜单)

@@ -1,0 +1,30 @@
+/* rem 中的块引用隐藏竖线 */
+.rem-text .rem-reference-container .rem-indented-indicator {
+	display: none;
+}
+
+/* 弹出菜单中的预览内容部分限制高度，防止块引用代码块的时候预览过高看不到下面的菜单 */
+.controlled-popup.rem-reference__popup .rem-reference__popup__preview {
+	max-height: 100px;
+	overflow: hidden;
+}
+.controlled-popup.rem-reference__popup
+	.rem-reference__popup__preview
+	#code-node {
+	width: calc(100% - 30px);
+}
+
+/* 块引用悬浮预览加滚动条 */
+#document-hover-preview__popup {
+	overflow: auto !important;
+}
+
+/* 为什么卡片rem 里的双链要加 x? */
+.rem-container.rem-container--concept-rem-type
+	.rem-text
+	.rem-reference__exclude-type-parent__delete,
+.rem-container.rem-container--multiline-card-type
+	.rem-text
+	.rem-reference__exclude-type-parent__delete {
+	display: none;
+}
