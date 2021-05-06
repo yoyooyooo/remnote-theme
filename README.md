@@ -13,8 +13,10 @@ remnote 主题
 ```css
 @import url("https://remnote-theme.vercel.app/multiple-window.css");
 /* 或 */
-@import url("https://cdn.jsdelivr.net/gh/yoyooyooo/remnote-theme/dist/index.css");
+@import url("https://cdn.jsdelivr.net/gh/yoyooyooo/remnote-theme/dist/multiple-window.css");
 ```
+
+其中的 `multiple-window` 按需求改成对应的主题小分类的名称，[参考](https://github.com/yoyooyooo/remnote-theme#按需引入的主题小分类)
 
 ## 主题配置
 
@@ -31,7 +33,4 @@ remnote 主题
 
 # 按需引入的主题小分类
 
-- [多窗口](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/multiple-window.css)
-  ```css
-  @import url("https://remnote-theme.vercel.app/multiple-window.css");
-  ```
+- [多窗口](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/multiple-window.css): multiple-window
