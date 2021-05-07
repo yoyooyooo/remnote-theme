@@ -7,9 +7,9 @@
 }
 .mosaic-tile {
   margin: 0;
-  /*多窗口时占满宽度*/
+  /*多窗口且宽度不足时占满宽度*/
   &:not(:nth-child(1):nth-last-child(1)) #document {
-    max-width: unset;
+    max-width: min(calc(100% - 30px), 800px);
   }
   &:not(:first-child:last-child) {
     padding: var(--mosaic-tile-padding);
