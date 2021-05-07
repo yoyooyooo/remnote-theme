@@ -1,30 +1,75 @@
 /* rem 中的块引用隐藏竖线 */
-.rem-text .rem-reference-container .rem-indented-indicator {
-	display: none;
+.rem {
+  .rem-reference-container {
+    .rem-reference {
+      .rem-indented-indicator {
+        display: none;
+      }
+
+      :not(.RichTextViewer) {
+        display: none;
+      }
+    }
+  }
 }
 
 /* 弹出菜单中的预览内容部分限制高度，防止块引用代码块的时候预览过高看不到下面的菜单 */
 .controlled-popup.rem-reference__popup .rem-reference__popup__preview {
-	max-height: 100px;
-	overflow: hidden;
+  max-height: 100px;
+  overflow: hidden;
 }
 .controlled-popup.rem-reference__popup
-	.rem-reference__popup__preview
-	#code-node {
-	width: calc(100% - 30px);
+  .rem-reference__popup__preview
+  #code-node {
+  width: calc(100% - 30px);
 }
 
 /* 块引用悬浮预览加滚动条 */
 #document-hover-preview__popup {
-	overflow: auto !important;
+  overflow: auto !important;
 }
 
 /* 为什么卡片rem 里的双链要加 x? */
 .rem-container.rem-container--concept-rem-type
-	.rem-text
-	.rem-reference__exclude-type-parent__delete,
+  .rem-text
+  .rem-reference__exclude-type-parent__delete,
 .rem-container.rem-container--multiline-card-type
-	.rem-text
-	.rem-reference__exclude-type-parent__delete {
-	display: none;
+  .rem-text
+  .rem-reference__exclude-type-parent__delete {
+  display: none;
+}
+
+/* 侧边栏里[[]] */
+#document-sidebar .rem-reference-link {
+  color: var(--reference-link-color-in-sidebar);
+}
+
+// 行内引用隐藏面包屑，只保留最后一级
+.rem {
+  .rem-reference {
+    font-size: 0px;
+    display: inline-flex;
+  }
+  .rem-reference > span > .rem-indented-indicator + .gray {
+    display: inline-flex;
+    width: 8px;
+    margin-right: -8px;
+    overflow: hidden;
+    &::before {
+      content: "\f012";
+      display: inline-block;
+      opacity: 1;
+      font-family: Icons;
+      font-style: normal;
+      font-weight: 400;
+      text-decoration: inherit;
+      text-align: center;
+      color: rgb(116, 120, 120);
+      font-size: 12px;
+      transform: rotateY(180deg) scaleY(0.8);
+    }
+  }
+  .rem-reference > span > span:last-child > .RichTextViewer {
+    font-size: 12px;
+  }
 }
