@@ -40,7 +40,7 @@ remnote 主题
 为了能让人根据需求自己取想要的，尽可能把作用拆的细了。
 
 - [多窗口](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/multiple-window.css): `multiple-window`，优化工具条样式，调整窗口间距以及拖动窗口大小的动作条的宽度和样式。并且多窗口模式下，单窗口时宽度不沾满，多窗口时宽度自动占满。
-- [power-ups tag](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/power-ups-tag.css): `power-ups-tag`，`Power-ups` 标签平时隐藏，hover 和 focus 时显示
-- [tag](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/tag.css): `tag`，标签美化
-- [rem-reference](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/rem-reference.css): `rem-reference`，双链`[[...]]`美化，显示 hover 时预览原文的高度(当引用代码块的时候内容过大，影响右键菜单)
-- [collapsed-sidebar](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/collapsed-sidebar.css): `collapsed-sidebar`，左侧菜单收缩时，触发区域隐藏到左下角
+- [power-ups 标签](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/power-ups-tag.css): `power-ups-tag`，`Power-ups` 标签平时隐藏，hover 和 focus 时显示
+- [普通标签美化](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/tag.css): `tag`，标签美化
+- [引用](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/rem-reference.css): `rem-reference`，双链`[[...]]`美化，显示 hover 时预览原文的高度(当引用代码块的时候内容过大，影响右键菜单)
+- [收缩时左侧菜单触发区域](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/collapsed-sidebar.css): `collapsed-sidebar`，左侧菜单收缩时，触发区域隐藏到左下角
