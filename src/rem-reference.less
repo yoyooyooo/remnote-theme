@@ -68,7 +68,17 @@
     }
   } */
   .rem-reference > span > span:last-child .RichTextViewer {
-    font-size: var(---rem-text-font-size, 15px);
+    font-size: var(--rem-text-font-size, 15px);
+  }
+  /* 修正 h123 下的双链字体大小 */
+  .rem-header--1 .rem-reference > span > span:last-child .RichTextViewer {
+    font-size: var(--heading1-font-size);
+  }
+  .rem-header--2 .rem-reference > span > span:last-child .RichTextViewer {
+    font-size: var(--heading2-font-size);
+  }
+  .rem-header--3 .rem-reference > span > span:last-child .RichTextViewer {
+    font-size: var(--heading3-font-size);
   }
 
   /* 块引用悬浮预览内的双链 */
