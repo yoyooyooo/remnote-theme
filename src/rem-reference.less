@@ -38,6 +38,11 @@
   color: var(--reference-link-color-in-sidebar);
 }
 
+/* 阻止块引用内外链跳转 */
+.rem-reference a {
+  pointer-events: none;
+}
+
 /* 行内引用隐藏面包屑，只保留最后一级 */
 .rem {
   .rem-reference {
