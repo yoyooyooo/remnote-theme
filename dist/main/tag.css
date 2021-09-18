@@ -1,0 +1,70 @@
+.rem .hierarchy-editor__tag-bar__tag {
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #535666;
+  font-size: 13px;
+  font-weight: 500;
+  height: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0 5px 0 10px;
+  white-space: pre;
+}
+.rem .hierarchy-editor__tag-bar {
+  bottom: 0;
+  top: 1px;
+}
+.rem .hierarchy-editor__tag-bar__tag__delete:hover {
+  background-color: transparent;
+  color: #000;
+}
+.rem .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag,
+.rem .rem-text .hierarchy-editor__tag-bar__tag {
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+.rem .hierarchy-editor__tag-bar .rem-indented-indicator,
+.rem .rem-text .rem-indented-indicator {
+  margin: 0 -10px;
+  top: 0;
+}
+.rem .hierarchy-editor__tag-bar .join-arrow {
+  font-size: 18px;
+  height: unset;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: -1px;
+  padding: 0;
+}
+.rem .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag__delete,
+.rem .rem-text .hierarchy-editor__tag-bar__tag__delete {
+  margin-left: 0;
+}
+.rem .hierarchy-editor__tag-bar__tag .rem-indented-indicator {
+  display: none;
+}
+.rem .hierarchy-editor__tag-bar__tag {
+  align-items: center;
+  background-image: linear-gradient(45deg, #ffb7b7, #7e7a7a00),
+    linear-gradient(135deg, #7e7a7a00, #fbffdf);
+  border: none;
+  display: inline-flex;
+  font-size: 0;
+  padding-left: 5px;
+  position: relative;
+  top: -2px;
+}
+.rem .hierarchy-editor__tag-bar__tag .RichTextViewer {
+  font-size: 12px;
+}
+.rem .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag__delete {
+  padding: 0 4px 0 0;
+}
+.rem .hierarchy-editor__tag-bar:hover .hierarchy-editor__tag-bar__tag__delete {
+  font-size: 16px;
+  line-height: 16px;
+}
+.rem .hierarchy-editor__tag-bar {
+  align-items: center;
+  display: flex;
+}

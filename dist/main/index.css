@@ -1,0 +1,249 @@
+body {
+  background-color: var(--main-background-color);
+  font-family: fira code, -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
+    Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-size: 14px;
+}
+#content {
+  background: #fff;
+}
+.rem-text:not([class*="rem-header-"]) {
+  color: #000;
+  font-size: var(--rem-text-font-size, 15px);
+}
+.mosaic {
+  background-color: var(--main-background-color) !important;
+}
+.mosaic-root {
+  inset: 0;
+  margin: calc(var(--mosaic-tile-padding) * -1);
+}
+.mosaic-tile {
+  margin: 0;
+}
+.mosaic-tile:not(:first-child:nth-last-child) #document {
+  max-width: 800px;
+}
+.mosaic-tile:not(:first-child:last-child) {
+  padding: var(--mosaic-tile-padding);
+}
+.mosaic-tile .mosaic-window {
+  box-shadow: 0 0 20px -6px rgba(0, 0, 0, 0.4);
+}
+.mosaic-tile .mosaic-window-toolbar {
+  box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.55), 0 0 1px 0 rgba(0, 0, 0, 0.55) !important;
+  opacity: 0;
+  position: absolute;
+  right: 8px;
+  top: 4px;
+  width: 50px;
+}
+.mosaic-tile .mosaic-window-toolbar:hover {
+  opacity: 1;
+  width: unset;
+}
+.mosaic-tile
+  .mosaic-window-toolbar
+  .mosaic-window-controls.bp3-button-group
+  > button {
+  background: #fff;
+  border: 0;
+  cursor: pointer;
+  padding: 2px;
+}
+.mosaic-tile .mosaic-window-toolbar .mosaic-window-title {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-left: 8px;
+}
+.mosaic-tile .mosaic-window-toolbar .mosaic-window-title:before {
+  color: #747878;
+  content: "\f0b2";
+  display: inline-block;
+  font-family: Icons;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+  height: 1em;
+  margin: 0 0.25rem 0 0;
+  opacity: 1;
+  text-align: center;
+  text-decoration: inherit;
+  width: 1.18em;
+}
+.mosaic-split.-column,
+.mosaic-split.-row {
+  background: var(--main-background-color);
+}
+.mosaic-split.-column:hover,
+.mosaic-split.-row:hover {
+  background: #8d7a7a !important;
+  z-index: 9;
+}
+.mosaic-split:hover .mosaic-split-line {
+  box-shadow: none !important;
+}
+.mosaic-split.-row {
+  margin-left: calc(var(--mosaic-tile-padding) * -1);
+  width: calc(var(--mosaic-tile-padding) * 2);
+}
+.mosaic-split.-column {
+  height: calc(var(--mosaic-tile-padding) * 2);
+  margin-top: calc(var(--mosaic-tile-padding) * -1);
+}
+.rem:not(:focus-within):not(:hover) .hierarchy-editor__tag-bar__power-up-tag {
+  display: none;
+}
+.rem-reference-container .rem-reference .rem-indented-indicator {
+  display: none;
+}
+.controlled-popup.rem-reference__popup .rem-reference__popup__preview {
+  max-height: 100px;
+  overflow: hidden;
+}
+.controlled-popup.rem-reference__popup
+  .rem-reference__popup__preview
+  #code-node {
+  width: calc(100% - 30px);
+}
+#document-hover-preview__popup {
+  overflow: auto !important;
+}
+.rem-container.rem-container--concept-rem-type
+  .rem-text
+  .rem-reference__exclude-type-parent__delete,
+.rem-container.rem-container--multiline-card-type
+  .rem-text
+  .rem-reference__exclude-type-parent__delete {
+  display: none;
+}
+#document-sidebar .rem-reference-link {
+  color: var(--reference-link-color-in-sidebar);
+}
+.rem-reference a {
+  pointer-events: none;
+}
+.rem .rem-reference {
+  display: inline-flex;
+  font-size: 0;
+}
+.rem .rem-reference .gray,
+.rem .rem-reference .join-arrow {
+  display: none;
+}
+.rem .rem-reference > span > span:last-child .RichTextViewer {
+  font-size: var(--rem-text-font-size, 15px);
+}
+.rem .rem-header--1 .rem-reference > span > span:last-child .RichTextViewer {
+  font-size: var(--heading1-font-size);
+}
+.rem .rem-header--2 .rem-reference > span > span:last-child .RichTextViewer {
+  font-size: var(--heading2-font-size);
+}
+.rem .rem-header--3 .rem-reference > span > span:last-child .RichTextViewer {
+  font-size: var(--heading3-font-size);
+}
+.rem #hierarchy-editor-references .rem-reference .RichTextViewer {
+  font-size: 12px;
+}
+.rem .hierarchy-editor__tag-bar__tag {
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #535666;
+  font-size: 13px;
+  font-weight: 500;
+  height: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0 5px 0 10px;
+  white-space: pre;
+}
+.rem .hierarchy-editor__tag-bar {
+  bottom: 0;
+  top: 1px;
+}
+.rem .hierarchy-editor__tag-bar__tag__delete:hover {
+  background-color: transparent;
+  color: #000;
+}
+.rem .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag,
+.rem .rem-text .hierarchy-editor__tag-bar__tag {
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+.rem .hierarchy-editor__tag-bar .rem-indented-indicator,
+.rem .rem-text .rem-indented-indicator {
+  margin: 0 -10px;
+  top: 0;
+}
+.rem .hierarchy-editor__tag-bar .join-arrow {
+  font-size: 18px;
+  height: unset;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: -1px;
+  padding: 0;
+}
+.rem .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag__delete,
+.rem .rem-text .hierarchy-editor__tag-bar__tag__delete {
+  margin-left: 0;
+}
+.rem .hierarchy-editor__tag-bar__tag .rem-indented-indicator {
+  display: none;
+}
+.rem .hierarchy-editor__tag-bar__tag {
+  align-items: center;
+  background-image: linear-gradient(45deg, #ffb7b7, #7e7a7a00),
+    linear-gradient(135deg, #7e7a7a00, #fbffdf);
+  border: none;
+  display: inline-flex;
+  font-size: 0;
+  padding-left: 5px;
+  position: relative;
+  top: -2px;
+}
+.rem .hierarchy-editor__tag-bar__tag .RichTextViewer {
+  font-size: 12px;
+}
+.rem .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag__delete {
+  padding: 0 4px 0 0;
+}
+.rem .hierarchy-editor__tag-bar:hover .hierarchy-editor__tag-bar__tag__delete {
+  font-size: 16px;
+  line-height: 16px;
+}
+.rem .hierarchy-editor__tag-bar {
+  align-items: center;
+  display: flex;
+}
+@media (min-width: 600px) {
+  #document-sidebar--collapsed {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    width: 30px;
+    z-index: 11;
+  }
+  #document-sidebar__hidden-link__container {
+    text-align: center;
+  }
+  .small-window-page {
+    height: 100%;
+  }
+}
+:root {
+  --rem-text-font-size: 15px;
+  --main-background-color: hsla(0, 0%, 83%, 0.23);
+  --mosaic-tile-padding: 4px;
+  --reference-link-color: #f8f8f9;
+  --reference-link-color-in-sidebar: #f8f8f9;
+  --heading1-font-size: 20px;
+  --heading2-font-size: 18px;
+  --heading3-font-size: 16px;
+}

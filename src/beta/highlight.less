@@ -1,0 +1,17 @@
+@textColor: #000;
+
+.highlight(@color, @bgColor) {
+  .highlight-color--@{color},
+  .pdf-viewer__highlight-container--@{color} .AreaHighlight,
+  .pdf-viewer__highlight-container--@{color} .Highlight__part {
+    color: var(~"--highlight-text-color-@{color}", @textColor);
+    background-color: var(~"--highlight-background-color-@{color}", @bgColor);
+  }
+}
+
+.highlight(red, rgba(255,207,213));
+.highlight(orange,rgb(255,217,199));
+.highlight(yellow,rgb(255,240,212));
+.highlight(green,rgb(166,251,222));
+.highlight(blue,rgb(212,240,255));
+.highlight(purple,rgb(236,220,255));

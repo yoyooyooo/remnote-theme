@@ -1,0 +1,22 @@
+.rem-text .RichTextViewer .quote {
+  background-color: #e0e1e1;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.underline {
+  -webkit-text-decoration: red solid underline;
+  text-decoration: red solid underline;
+  text-underline-position: under;
+}
+.rem-header--1 {
+  background-color: rgba(0, 0, 1, 0.05);
+  font-size: var(--heading1-font-size);
+}
+.rem-header--2 {
+  font-size: var(--heading2-font-size);
+}
+.rem-header--3 {
+  font-size: var(--heading3-font-size);
+  text-decoration: underline;
+  text-underline-position: under;
+}

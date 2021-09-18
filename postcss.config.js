@@ -1,11 +1,12 @@
 module.exports = {
-  //   parser: "postcss-less",
+  parser: "sugarss",
+  // syntax: require.resolve("postcss-less"),
   plugins: [
-    require("cssnano")({
-      preset: "default",
-    }),
-    require("postcss-import")(),
-    require("postcss-nested"),
+    // require("postcss-nested"),
+    // require("cssnano")({
+    //   preset: "default"
+    // }),
+    // require("postcss-import")()
     //   require("postcss-url")({ url: "copy", useHash: true })
   ],
 };
