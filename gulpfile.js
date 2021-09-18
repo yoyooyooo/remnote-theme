@@ -9,7 +9,7 @@ const buildLess = (folder) => {
   const processors = [autoprefixer, cssnano];
   return gulp
     .src(`./src/${folder}/*.less`)
-    .pipe(less())
+    .pipe(less({ javascriptEnabled: true }))
     .pipe(postcss(processors))
     .pipe(gulp.dest(`./dist/${folder}`));
 };

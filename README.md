@@ -32,6 +32,25 @@ remnote 主题
   --main-background-color: rgb(211 211 211 / 23%);
   /* 多窗口各窗口的间距 */
   --mosaic-tile-padding: 4px;
+
+  /* 高亮 */
+  --highlight-text-color-red: #000;
+  --highlight-background-color-red: rgba(255, 0, 0, 22%);
+
+  --highlight-text-color-orange: #000;
+  --highlight-background-color-orange: rgba(244, 167, 98, 0.45);
+
+  --highlight-text-color-yellow: #000;
+  --highlight-background-color-yellow: rgba(250, 233, 123, 0.45);
+
+  --highlight-text-color-green: #000;
+  --highlight-background-color-green: rgba(112, 230, 109, 0.45);
+
+  --highlight-text-color-blue: #000;
+  --highlight-background-color-blue: #ddd;
+
+  --highlight-text-color-purple: #000;
+  --highlight-background-color-purple: rgba(162, 102, 232, 0.45);
 }
 ```
 

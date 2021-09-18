@@ -4,8 +4,17 @@
   .highlight-color--@{color},
   .pdf-viewer__highlight-container--@{color} .AreaHighlight,
   .pdf-viewer__highlight-container--@{color} .Highlight__part {
-    color: var(~"--highlight-text-color-@{color}", @textColor);
-    background-color: var(~"--highlight-background-color-@{color}", @bgColor);
+    color: var(~"--highlight-text-color-@{color}", @textColor) !important;
+    background-color: var(
+      ~"--highlight-background-color-@{color}",
+      @bgColor
+    ) !important;
+  }
+  .popup-menu > div[data-tip*=~"'Highlight @{color}' i"] > div {
+    background-color: var(
+      ~"--highlight-background-color-@{color}",
+      @bgColor
+    ) !important;
   }
 }
 
