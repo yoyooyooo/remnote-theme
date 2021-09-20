@@ -1,0 +1,70 @@
+.rem {
+  .rem-text .rem-indented-indicator,
+  .hierarchy-editor__tag-bar .rem-indented-indicator {
+    margin: 0 -10px;
+    top: 0;
+  }
+
+  .hierarchy-editor__tag-bar {
+    display: flex;
+    align-items: center;
+
+    .join-arrow {
+      margin-left: 0;
+      margin-right: 0;
+      font-size: 18px;
+      margin-top: -1px;
+      padding: 0;
+      height: unset;
+    }
+
+    // 多余 2 个 tag 时的显示更多按钮
+    > span.hierarchy-editor__tag-bar__tag {
+      padding-left: 0px;
+      padding-right: 4px;
+      font-size: 12px;
+    }
+
+    > span:not(.hierarchy-editor__tag-bar__tag) {
+      display: inline-flex;
+    }
+
+    // 正常 tag
+    .hierarchy-editor__tag-bar__tag {
+      // 隐藏#
+      font-size: 0;
+      .RichTextViewer {
+        font-size: 12px;
+      }
+
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+      top: -2px;
+      background-image: linear-gradient(45deg, #ffb7b7, #7e7a7a00),
+        linear-gradient(135deg, #7e7a7a00, #fbffdf);
+      border: none;
+      border-radius: 5px;
+      padding: 1px 4px;
+      color: #535666;
+      white-space: pre;
+      font-weight: 500;
+      box-sizing: border-box;
+
+      .rem-indented-indicator {
+        display: none;
+      }
+
+      .hierarchy-editor__tag-bar__tag__delete {
+        display: none;
+        &:hover {
+          color: black;
+          background-color: rgba(0, 0, 0, 0);
+        }
+      }
+      &:hover .hierarchy-editor__tag-bar__tag__delete {
+        display: block;
+      }
+    }
+  }
+}
