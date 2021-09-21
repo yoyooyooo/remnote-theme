@@ -1,0 +1,43 @@
+// tag 容器收缩成小圆点，hover 时展示
+.rem[data-rem-tags~="htag"] .hierarchy-editor__tag-bar {
+  width: auto;
+  right: 0;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(3, 136, 21);
+  border-radius: 50%;
+  overflow: hidden;
+
+  .hierarchy-editor__tag-bar__tag {
+    display: none;
+  }
+
+  &:hover {
+    background-color: #fff;
+    width: unset;
+    height: unset;
+    border-radius: unset;
+    overflow: unset;
+    border-radius: 5px;
+    .hierarchy-editor__tag-bar__tag {
+      display: inline-flex;
+    }
+  }
+}
+
+// =============== 美化标签 ===============
+
+// 引用
+.rem[data-rem-tags~="blockquote"] > div:first-child .rem-text > div {
+  background-color: #f4f4f4;
+  border-left: 5px solid #ffcc6f;
+  padding: 6px 11px !important;
+}
+.rem[data-rem-tags~="blockquote"]
+  > div:first-child
+  .rem-container--compact
+  .rem-text
+  > div {
+  margin: -2.5px 0;
+}

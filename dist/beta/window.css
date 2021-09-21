@@ -1,3 +1,6 @@
+#multiple-windows > .split > .gutter {
+  background-color: #f6f6f6;
+}
 .mosaic {
   background-color: var(--main-background-color) !important;
 }

@@ -1,0 +1,5 @@
+.rem-reference-link {
+  background-color: hsla(0, 1%, 81%, 0.2);
+  border-bottom: 1px dashed #bbb;
+  color: unset;
+}

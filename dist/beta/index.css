@@ -70,6 +70,9 @@
     #ecdcff
   ) !important;
 }
+#multiple-windows > .split > .gutter {
+  background-color: #f6f6f6;
+}
 .mosaic {
   background-color: var(--main-background-color) !important;
 }
@@ -241,4 +244,49 @@
   .hierarchy-editor__tag-bar__tag:hover
   .hierarchy-editor__tag-bar__tag__delete {
   display: block;
+}
+.rem[data-rem-tags~="htag"] .hierarchy-editor__tag-bar {
+  background-color: #038815;
+  border-radius: 50%;
+  height: 10px;
+  overflow: hidden;
+  right: 0;
+  top: 0;
+  width: auto;
+  width: 10px;
+}
+.rem[data-rem-tags~="htag"]
+  .hierarchy-editor__tag-bar
+  .hierarchy-editor__tag-bar__tag {
+  display: none;
+}
+.rem[data-rem-tags~="htag"] .hierarchy-editor__tag-bar:hover {
+  background-color: #fff;
+  border-radius: unset;
+  border-radius: 5px;
+  height: unset;
+  overflow: unset;
+  width: unset;
+}
+.rem[data-rem-tags~="htag"]
+  .hierarchy-editor__tag-bar:hover
+  .hierarchy-editor__tag-bar__tag {
+  display: inline-flex;
+}
+.rem[data-rem-tags~="blockquote"] > div:first-child .rem-text > div {
+  background-color: #f4f4f4;
+  border-left: 5px solid #ffcc6f;
+  padding: 6px 11px !important;
+}
+.rem[data-rem-tags~="blockquote"]
+  > div:first-child
+  .rem-container--compact
+  .rem-text
+  > div {
+  margin: -2.5px 0;
+}
+.rem-reference-link {
+  background-color: hsla(0, 1%, 81%, 0.2);
+  border-bottom: 1px dashed #bbb;
+  color: unset;
 }
