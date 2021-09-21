@@ -290,3 +290,6 @@
   border-bottom: 1px dashed #bbb;
   color: unset;
 }
+.Queue {
+  height: 100vh;
+}
