@@ -2,4 +2,9 @@
   background-color: hsla(0, 1%, 81%, 0.2);
   border-bottom: 1px dashed #bbb;
   color: unset;
+  display: inline-flex;
+}
+.rem-reference-link > span > .RichTextViewer {
+  align-items: center;
+  display: inline-flex;
 }
