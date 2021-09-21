@@ -219,6 +219,10 @@
 .rem
   .hierarchy-editor__tag-bar
   .hierarchy-editor__tag-bar__tag
+  .rem-is-custom-rem-type,
+.rem
+  .hierarchy-editor__tag-bar
+  .hierarchy-editor__tag-bar__tag
   .RichTextViewer {
   font-size: 12px;
 }
