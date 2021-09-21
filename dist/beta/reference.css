@@ -4,8 +4,3 @@
   color: unset;
   display: inline-flex;
 }
-.EditorContainer > div[data-slate-node="element"],
-.RichTextViewer {
-  align-items: center;
-  display: inline-flex;
-}

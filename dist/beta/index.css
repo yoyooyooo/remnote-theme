@@ -295,11 +295,6 @@
   color: unset;
   display: inline-flex;
 }
-.EditorContainer > div[data-slate-node="element"],
-.RichTextViewer {
-  align-items: center;
-  display: inline-flex;
-}
 .Queue {
   height: 100vh !important;
 }
