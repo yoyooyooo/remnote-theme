@@ -295,7 +295,7 @@
   color: unset;
   display: inline-flex;
 }
-.rem-reference-link > span > .RichTextViewer {
+.RichTextViewer {
   align-items: center;
   display: inline-flex;
 }
