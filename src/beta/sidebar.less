@@ -1,3 +1,12 @@
-.document-sidebar--collapsed--vertical {
-  display: none;
+#content {
+  position: relative;
+  .document-sidebar--collapsed--vertical {
+    position: absolute;
+    left: 0;
+    top: 0;
+    > div {
+      opacity: 0;
+      z-index: 9;
+    }
+  }
 }
