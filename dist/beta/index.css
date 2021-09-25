@@ -145,7 +145,7 @@
   content: "\f0b2";
   display: inline-block;
   font-family: Icons;
-  font-size: 1em;
+  font-size: 1.2em;
   font-style: normal;
   font-weight: 400;
   height: 1em;
@@ -166,14 +166,6 @@
 }
 .mosaic-split:hover .mosaic-split-line {
   box-shadow: none !important;
-}
-.mosaic-split.-row {
-  margin-left: calc(var(--mosaic-tile-padding) * -1);
-  width: calc(var(--mosaic-tile-padding) * 2);
-}
-.mosaic-split.-column {
-  height: calc(var(--mosaic-tile-padding) * 2);
-  margin-top: calc(var(--mosaic-tile-padding) * -1);
 }
 .rem .hierarchy-editor__tag-bar .rem-indented-indicator,
 .rem .rem-text .rem-indented-indicator {

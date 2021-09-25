@@ -4,21 +4,11 @@
 }
 
 /* 多窗口卡片盒子 */
-.mosaic {
-  background-color: var(--main-background-color) !important;
-}
-.mosaic-root {
-  inset: 0px;
-  margin: calc(-1 * var(--mosaic-tile-padding));
-}
 .mosaic-tile {
   margin: 0;
   /*多窗口且宽度不足时占满宽度*/
   &:not(:nth-child(1):nth-last-child(1)) #document {
     max-width: min(calc(100% - 30px), 800px);
-  }
-  &:not(:first-child:last-child) {
-    padding: var(--mosaic-tile-padding);
   }
   & .mosaic-window {
     box-shadow: 0 0 20px -6px rgb(0 0 0 / 40%);
@@ -73,7 +63,7 @@
         font-weight: 400;
         text-decoration: inherit;
         text-align: center;
-        font-size: 1em;
+        font-size: 1.2em;
         color: rgb(116, 120, 120);
       }
     }
@@ -91,12 +81,4 @@
 }
 .mosaic-split:hover .mosaic-split-line {
   box-shadow: none !important;
-}
-.mosaic-split.-row {
-  margin-left: calc(var(--mosaic-tile-padding) * -1);
-  width: calc(var(--mosaic-tile-padding) * 2);
-}
-.mosaic-split.-column {
-  margin-top: calc(var(--mosaic-tile-padding) * -1);
-  height: calc(var(--mosaic-tile-padding) * 2);
 }
