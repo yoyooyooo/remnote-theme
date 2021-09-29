@@ -1,0 +1,28 @@
+.header(@h, @bgcolor, @bulletSize, @fontSize) {
+  .rem-container--header-@{h} {
+    .rem-bullet,
+    .rem-bullet--in-list {
+      width: @bulletSize;
+      height: @bulletSize;
+    }
+    .rem-bullet__number {
+      color: @bgcolor;
+    }
+    .rem-bullet__container {
+      .rem-bullet,
+      .rem-bullet--in-list {
+        background-color: @bgcolor;
+      }
+      .rem-bullet__icon > path {
+        fill: @bgcolor;
+      }
+    }
+    .rem-text.rem-header--@{h} {
+      font-size: @fontSize;
+    }
+  }
+}
+
+.header(1, red, 10px, 1rem);
+.header(2, rgb(47, 0, 255), 8px, 1rem);
+.header(3, rgb(247, 81, 247), 6px, 1rem);

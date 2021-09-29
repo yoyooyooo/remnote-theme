@@ -1,0 +1,12 @@
+#content {
+  position: relative;
+}
+#content .document-sidebar--collapsed--vertical {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+#content .document-sidebar--collapsed--vertical > div {
+  opacity: 0;
+  z-index: 9;
+}

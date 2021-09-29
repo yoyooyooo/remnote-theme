@@ -73,21 +73,11 @@
 #multiple-windows > .split > .gutter {
   background-color: #f6f6f6;
 }
-.mosaic {
-  background-color: var(--main-background-color) !important;
-}
-.mosaic-root {
-  inset: 0;
-  margin: calc(var(--mosaic-tile-padding) * -1);
-}
 .mosaic-tile {
   margin: 0;
 }
 .mosaic-tile:not(:first-child:nth-last-child) #document {
   max-width: 800px;
-}
-.mosaic-tile:not(:first-child:last-child) {
-  padding: var(--mosaic-tile-padding);
 }
 .mosaic-tile .mosaic-window {
   box-shadow: 0 0 20px -6px rgba(0, 0, 0, 0.4);
@@ -289,4 +279,79 @@
 }
 .Queue {
   height: 100vh !important;
+}
+#document,
+.tile__document,
+body {
+  background: #f6f5f0;
+  color: #555;
+}
+#multiple-windows > .split > .gutter {
+  background-color: #e2dfcf;
+}
+#content {
+  position: relative;
+}
+#content .document-sidebar--collapsed--vertical {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+#content .document-sidebar--collapsed--vertical > div {
+  opacity: 0;
+  z-index: 9;
+}
+.rem-container--header-1 .rem-bullet,
+.rem-container--header-1 .rem-bullet--in-list {
+  height: 10px;
+  width: 10px;
+}
+.rem-container--header-1 .rem-bullet__number {
+  color: red;
+}
+.rem-container--header-1 .rem-bullet__container .rem-bullet,
+.rem-container--header-1 .rem-bullet__container .rem-bullet--in-list {
+  background-color: red;
+}
+.rem-container--header-1 .rem-bullet__container .rem-bullet__icon > path {
+  fill: red;
+}
+.rem-container--header-1 .rem-text.rem-header--1 {
+  font-size: 1rem;
+}
+.rem-container--header-2 .rem-bullet,
+.rem-container--header-2 .rem-bullet--in-list {
+  height: 8px;
+  width: 8px;
+}
+.rem-container--header-2 .rem-bullet__number {
+  color: #2f00ff;
+}
+.rem-container--header-2 .rem-bullet__container .rem-bullet,
+.rem-container--header-2 .rem-bullet__container .rem-bullet--in-list {
+  background-color: #2f00ff;
+}
+.rem-container--header-2 .rem-bullet__container .rem-bullet__icon > path {
+  fill: #2f00ff;
+}
+.rem-container--header-2 .rem-text.rem-header--2 {
+  font-size: 1rem;
+}
+.rem-container--header-3 .rem-bullet,
+.rem-container--header-3 .rem-bullet--in-list {
+  height: 6px;
+  width: 6px;
+}
+.rem-container--header-3 .rem-bullet__number {
+  color: #f751f7;
+}
+.rem-container--header-3 .rem-bullet__container .rem-bullet,
+.rem-container--header-3 .rem-bullet__container .rem-bullet--in-list {
+  background-color: #f751f7;
+}
+.rem-container--header-3 .rem-bullet__container .rem-bullet__icon > path {
+  fill: #f751f7;
+}
+.rem-container--header-3 .rem-text.rem-header--3 {
+  font-size: 1rem;
 }
