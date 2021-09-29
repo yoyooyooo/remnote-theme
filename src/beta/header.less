@@ -4,6 +4,7 @@
     .rem-bullet--in-list {
       width: @bulletSize;
       height: @bulletSize;
+      border-color: lighten(@bgcolor, 50%);
     }
     .rem-bullet__number {
       color: @bgcolor;
@@ -23,6 +24,6 @@
   }
 }
 
-.header(1, red, 10px, 1rem);
+.header(1, rgb(233, 37, 37), 10px, 1rem);
 .header(2, rgb(47, 0, 255), 8px, 1rem);
 .header(3, rgb(247, 81, 247), 6px, 1rem);
