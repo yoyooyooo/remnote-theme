@@ -329,7 +329,7 @@ body {
   fill: #e92525;
 }
 .rem-container--header-1 .rem-text.rem-header--1 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .rem-container--header-2 .rem-bullet,
 .rem-container--header-2 .rem-bullet--in-list {
@@ -348,7 +348,7 @@ body {
   fill: #2f00ff;
 }
 .rem-container--header-2 .rem-text.rem-header--2 {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .rem-container--header-3 .rem-bullet,
 .rem-container--header-3 .rem-bullet--in-list {
