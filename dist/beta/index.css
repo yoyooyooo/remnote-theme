@@ -281,6 +281,7 @@
   height: 100vh !important;
 }
 #document,
+#document-sidebar,
 .tile__document,
 body {
   background: #f6f5f0;
