@@ -1,8 +1,7 @@
 @font-face {
   font-display: swap;
   font-family: Kalam-Regular;
-  src: local("Kalam-Regular"),
-    url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/Kalam-Regular.woff2)
+  src: url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/Kalam-Regular.woff2)
       format("woff2"),
     url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/Kalam-Regular.woff)
       format("woff"),
@@ -12,8 +11,7 @@
 @font-face {
   font-display: swap;
   font-family: DancingScript-Regular;
-  src: local("DancingScript-Regular"),
-    url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/DancingScript-Regular.woff2)
+  src: url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/DancingScript-Regular.woff2)
       format("woff2"),
     url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/DancingScript-Regular.woff)
       format("woff"),
@@ -23,8 +21,7 @@
 @font-face {
   font-display: swap;
   font-family: GlowSansSC-Regular;
-  src: local("GlowSansSC-Regular"),
-    url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/GlowSansSCRegular.woff2)
+  src: url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/GlowSansSCRegular.woff2)
       format("woff2"),
     url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/GlowSansSCRegular.woff)
       format("woff"),
@@ -42,9 +39,7 @@
 .font-inter,
 .rem-text,
 body {
-  -webkit-font-smoothing: antialiased;
   font-family: GlowSansSC-Regular !important;
-  font-weight: 500;
 }
 #DocumentTitle .document-title.rem-text {
   font-family: Kalam-Regular, hand-painted, DancingScript-Regular,
