@@ -29,9 +29,9 @@ remnote 主题
 ```css
 :root {
   /* 主背景色 */
-  --main-background-color: rgb(211 211 211 / 23%);
-  /* 多窗口各窗口的间距 */
-  --mosaic-tile-padding: 4px;
+  --main-background-color: #f6f5f0;
+  /* 主字体色 */
+  --main-font-color: #555;
 
   /* 高亮 */
   --highlight-text-color-red: #000;
@@ -58,10 +58,11 @@ remnote 主题
 
 为了能让人根据需求自己取想要的，尽可能把作用拆的细了。
 
-- [多窗口](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/multiple-window.css): `multiple-window`，优化工具条样式，调整窗口间距以及拖动窗口大小的动作条的宽度和样式。并且多窗口模式下，单窗口时宽度不沾满，多窗口时宽度自动占满。
-- [power-ups 标签](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/power-ups-tag.css): `power-ups-tag`，`Power-ups` 标签平时隐藏，hover 和 focus 时显示
-- [普通标签美化](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/tag.css): `tag`，标签美化
-- [引用](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/rem-reference.css): `rem-reference`，双链`[[...]]`美化
-  - 显示 hover 时预览原文的高度(当引用代码块的时候内容过大，影响右键菜单)
-  - 行内引用隐藏面包屑，只保留最后一级(因为 hover 时能看到完整面包屑)，如果是
-- [收缩时左侧菜单触发区域](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/collapsed-sidebar.css): `collapsed-sidebar`，左侧菜单收缩时，触发区域隐藏到左下角
+- [背景](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/background.css): `window` ，背景美化
+- [字体](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/font.css): ` font` ，字体美化
+- [标题 h123](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/background.css): `header` ，h123 美化
+- [高亮](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/background.css): `highlight` 自定义高亮
+- [多窗口](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/multiple-window.css): `multiple-window`，优化工具条样式。
+- [普通标签美化](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/tag.css): `tag`，标签美化
+- [引用](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/reference.css): `reference`，双链`[[...]]`美化
+- [收缩时左侧菜单触发区域](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/sidebar.css): `sidebar`，左侧菜单收缩时，触发区域扩大至整个左侧，但隐藏占位空间
