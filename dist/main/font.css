@@ -1,6 +1,8 @@
 @font-face {
   font-display: swap;
   font-family: Kalam-Regular;
+  font-style: normal;
+  font-weight: 400;
   src: url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/Kalam-Regular.woff2)
       format("woff2"),
     url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/Kalam-Regular.woff)
@@ -11,6 +13,8 @@
 @font-face {
   font-display: swap;
   font-family: DancingScript-Regular;
+  font-style: normal;
+  font-weight: 400;
   src: url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/DancingScript-Regular.woff2)
       format("woff2"),
     url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/DancingScript-Regular.woff)
@@ -21,6 +25,8 @@
 @font-face {
   font-display: swap;
   font-family: GlowSansSC-Regular;
+  font-style: normal;
+  font-weight: 400;
   src: url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/GlowSansSCRegular.woff2)
       format("woff2"),
     url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/GlowSansSCRegular.woff)
