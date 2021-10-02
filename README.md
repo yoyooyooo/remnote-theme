@@ -5,15 +5,15 @@ remnote 主题
 ## 全部引入
 
 ```css
-@import url("https://remnote-theme.vercel.app/index.css");
+@import url("https://remnote-theme.vercel.app/main/index.css");
 ```
 
 ## 按需引入
 
 ```css
-@import url("https://remnote-theme.vercel.app/multiple-window.css");
+@import url("https://remnote-theme.vercel.app/main/background.css");
 /* 或 */
-@import url("https://cdn.jsdelivr.net/gh/yoyooyooo/remnote-theme/dist/multiple-window.css");
+@import url("https://cdn.jsdelivr.net/gh/yoyooyooo/remnote-theme/dist/main/background.css");
 ```
 
 其中的 `multiple-window` 按需求改成对应的主题小分类的名称，参考[参考主题小分类](https://github.com/yoyooyooo/remnote-theme#按需引入的主题小分类)
