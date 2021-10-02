@@ -1,21 +1,21 @@
-.cdnFont(@fontFamily,@filename) {
+@cdnPrefix1: "https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02";
+@cdnPrefix2: "https://github.com/yoyooyooo/file/tree/main/uPic/2021/10/02";
+
+.cdnFont(@fontFamily, @filename) {
   @font-face {
     font-family: "@{fontFamily}";
     font-display: swap;
     font-weight: normal;
     font-style: normal;
-    src: /* local("@{fontFamily}"), */ url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/@{filename}.woff2")
-        format("woff2"),
-      url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/@{filename}.woff")
-        format("woff"),
-      url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/@{filename}.ttf")
-        format("truetype");
+    src: /* local("@{fontFamily}"), */ url("@{filename}.woff2") format("woff2"),
+      url("@{@{filename}.woff") format("woff"),
+      url("@{@{filename}.ttf") format("truetype");
   }
 }
 
-.cdnFont("Kalam-Regular", "Kalam-Regular");
-.cdnFont("DancingScript-Regular", "DancingScript-Regular");
-.cdnFont("GlowSansSC-Regular", "GlowSansSCRegular");
+.cdnFont("Kalam-Regular", "@{cdnPrefix1}/Kalam-Regular");
+.cdnFont("DancingScript-Regular", "@{cdnPrefix1}/DancingScript-Regular");
+.cdnFont("GlowSansSC-Regular", "@{cdnPrefix2}/GlowSansSC-Regular");
 
 @font-face {
   font-family: "hand-painted";
