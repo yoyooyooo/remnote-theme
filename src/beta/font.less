@@ -1,20 +1,20 @@
-.cdnFont(@fontFamily) {
+.cdnFont(@fontFamily,@filename) {
   @font-face {
-    font-family: "@{fontFamily}-Regular";
+    font-family: "@{fontFamily}";
     font-display: swap;
-    src: local("@{fontFamily}-Regular"),
-      url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/@{fontFamily}-Regular.woff2")
+    src: local("@{fontFamily}"),
+      url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/@{filename}.woff2")
         format("woff2"),
-      url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/@{fontFamily}-Regular.woff")
+      url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/@{filename}.woff")
         format("woff"),
-      url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/@{fontFamily}-Regular.ttf")
+      url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/@{filename}.ttf")
         format("truetype");
   }
 }
 
-.cdnFont("Kalam");
-.cdnFont("GlowSansSC");
-.cdnFont("DancingScript");
+.cdnFont("Kalam-Regular", "Kalam-Regular");
+.cdnFont("DancingScript-Regular", "DancingScript-Regular");
+.cdnFont("GlowSansSCRegular", "GlowSansSCRegular");
 
 @font-face {
   font-family: "hand-painted";
