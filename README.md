@@ -66,3 +66,4 @@ remnote 主题
 - [普通标签美化](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/tag.css): `tag`，标签美化
 - [引用](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/reference.css): `reference`，双链`[[...]]`美化
 - [收缩时左侧菜单触发区域](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/sidebar.css): `sidebar`，左侧菜单收缩时，触发区域扩大至整个左侧，但隐藏占位空间
+- [顶部导航栏](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/topbar.css): `topbar`， 顶部导航栏移植右下角，平时不展示，鼠标移到右下角附近区域时展示前进后退按钮

@@ -1,0 +1,41 @@
+.top-bar-container {
+  bottom: 44px;
+  bottom: 0;
+  height: 100px;
+  position: fixed;
+  right: 80px;
+  right: 0;
+  width: 180px;
+  z-index: 9;
+}
+.top-bar-container:hover .navigation-bar {
+  opacity: 1;
+}
+.top-bar-container .navigation-bar {
+  background-color: unset;
+  bottom: 40px;
+  opacity: 0;
+  position: fixed;
+  right: 100px;
+}
+.top-bar-container .navigation-bar > .navigation-bar__button {
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  transition: transform 0.2s cubic-bezier(0, 0.51, 0.11, 0.89);
+  width: 20px;
+}
+.top-bar-container .navigation-bar > .navigation-bar__button > i {
+  margin: 0;
+}
+.top-bar-container .navigation-bar > .navigation-bar__button:first-child {
+  margin-right: 8px;
+}
+.top-bar-container .navigation-bar > .navigation-bar__button:hover {
+  box-shadow: 0 0 10px -2px #000;
+  transform: scale(1.5);
+  transform-origin: center;
+}
