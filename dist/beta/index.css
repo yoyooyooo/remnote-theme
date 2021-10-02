@@ -372,11 +372,34 @@ body {
 @font-face {
   font-display: swap;
   font-family: Kalam-Regular;
-  src: url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/Kalam-Regular.woff2)
+  src: local("Kalam-Regular"),
+    url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/Kalam-Regular.woff2)
       format("woff2"),
     url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/Kalam-Regular.woff)
       format("woff"),
     url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/Kalam-Regular.ttf)
+      format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: GlowSansSC-Regular;
+  src: local("GlowSansSC-Regular"),
+    url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/GlowSansSC-Regular.woff2)
+      format("woff2"),
+    url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/GlowSansSC-Regular.woff)
+      format("woff"),
+    url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/GlowSansSC-Regular.ttf)
+      format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: DancingScript-Regular;
+  src: local("DancingScript-Regular"),
+    url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/DancingScript-Regular.woff2)
+      format("woff2"),
+    url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/DancingScript-Regular.woff)
+      format("woff"),
+    url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/DancingScript-Regular.ttf)
       format("truetype");
 }
 @font-face {
@@ -386,28 +409,6 @@ body {
   font-weight: 400;
   src: url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/04/03/font.woff2)
     format("woff2");
-}
-@font-face {
-  font-display: swap;
-  font-family: GlowSansSC-Regular;
-  src: local("Glow Sans SC"),
-    url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/GlowSansSCRegular.woff2)
-      format("woff2"),
-    url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/GlowSansSCRegular.woff)
-      format("woff"),
-    url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/GlowSansSCRegular.ttf)
-      format("truetype");
-}
-@font-face {
-  font-display: swap;
-  font-family: DancingScript-Regular;
-  src: local("DancingScript-Regular"),
-    url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/DancingScript-Regular..woff2)
-      format("woff2"),
-    url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/DancingScript-Regular..woff)
-      format("woff"),
-    url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/DancingScript-Regular..ttf)
-      format("truetype");
 }
 .font-inter,
 .rem-text,

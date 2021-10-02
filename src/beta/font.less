@@ -1,13 +1,20 @@
-@font-face {
-  font-family: "Kalam-Regular";
-  font-display: swap;
-  src: url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/Kalam-Regular.woff2")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/Kalam-Regular.woff")
-      format("woff"),
-    url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/Kalam-Regular.ttf")
-      format("truetype");
+.cdnFont(@fontFamily) {
+  @font-face {
+    font-family: "@{fontFamily}-Regular";
+    font-display: swap;
+    src: local("@{fontFamily}-Regular"),
+      url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/@{fontFamily}-Regular.woff2")
+        format("woff2"),
+      url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/@{fontFamily}-Regular.woff")
+        format("woff"),
+      url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/@{fontFamily}-Regular.ttf")
+        format("truetype");
+  }
 }
+
+.cdnFont("Kalam");
+.cdnFont("GlowSansSC");
+.cdnFont("DancingScript");
 
 @font-face {
   font-family: "hand-painted";
@@ -16,30 +23,6 @@
     format("woff2");
   font-weight: normal;
   font-style: normal;
-}
-
-@font-face {
-  font-family: "GlowSansSC-Regular";
-  font-display: swap;
-  src: local("Glow Sans SC"),
-    url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/GlowSansSCRegular.woff2")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/GlowSansSCRegular.woff")
-      format("woff"),
-    url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/GlowSansSCRegular.ttf")
-      format("truetype");
-}
-
-@font-face {
-  font-family: "DancingScript-Regular";
-  font-display: swap;
-  src: local("DancingScript-Regular"),
-    url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/DancingScript-Regular..woff2")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/DancingScript-Regular..woff")
-      format("woff"),
-    url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/DancingScript-Regular..ttf")
-      format("truetype");
 }
 
 body,
