@@ -22,6 +22,7 @@
 }
 .rem .hierarchy-editor__tag-bar > span:not(.hierarchy-editor__tag-bar__tag) {
   display: inline-flex;
+  margin-top: 4px;
 }
 .rem .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag {
   align-items: center;

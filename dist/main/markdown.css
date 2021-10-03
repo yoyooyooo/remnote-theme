@@ -1,0 +1,10 @@
+.rem-text .RichTextViewer .quote,
+.rem-text [data-slate-node="text"] .quote {
+  background-color: #e0e1e1;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.rem-text .RichTextViewer .underline,
+.rem-text [data-slate-node="text"] .underline {
+  text-underline-position: under;
+}
