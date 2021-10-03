@@ -237,7 +237,7 @@
   .hierarchy-editor__tag-bar__tag__delete {
   display: block;
 }
-.rem-is-custom-rem-type > div {
+.rem-is-custom-rem-type > :first-child:last-child {
   display: flex;
 }
 .rem:not(:focus-within):not(:hover) .rem-is-custom-rem-type ~ * {
