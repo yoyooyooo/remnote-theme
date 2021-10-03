@@ -240,6 +240,10 @@
 .rem-is-custom-rem-type > :first-child:last-child {
   display: flex;
 }
+.rem:not(:focus-within):not(:hover) .rem-is-custom-rem-type {
+  margin-left: -3px;
+  margin-right: -5px;
+}
 .rem:not(:focus-within):not(:hover) .rem-is-custom-rem-type ~ * {
   display: none;
 }
@@ -411,11 +415,11 @@ body {
   font-family: GlowSansSC-Regular;
   font-style: normal;
   font-weight: 400;
-  src: url(https://github.com/yoyooyooo/file/tree/main/uPic/2021/10/02/GlowSansSC-Regular.woff2)
+  src: url(https://github.com/yoyooyooo/file/tree/main/uPic/2021/10/02/GlowSansSC-Normal-Regular.woff2)
       format("woff2"),
-    url(@{https:/github.com/yoyooyooo/file/tree/main/uPic/2021/10/02/GlowSansSC-Regular.woff)
+    url(@{https:/github.com/yoyooyooo/file/tree/main/uPic/2021/10/02/GlowSansSC-Normal-Regular.woff)
       format("woff"),
-    url(@{https:/github.com/yoyooyooo/file/tree/main/uPic/2021/10/02/GlowSansSC-Regular.ttf)
+    url(@{https:/github.com/yoyooyooo/file/tree/main/uPic/2021/10/02/GlowSansSC-Normal-Regular.ttf)
       format("truetype");
 }
 @font-face {

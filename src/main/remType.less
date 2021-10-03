@@ -1,71 +1,29 @@
-.rem-container--concept-rem-type
-  > .rem-text
-  > .rich-text-editor
-  > .EditorContainer
-  > div::before,
-.rem-container--concept-rem-type
-  > .rem-text
-  > .EditorContainer:not(.rem-bullet__number):before {
-  content: "";
-  background: var(--concept-icon-color, green);
-  display: inline-block;
-  width: 15px;
-  height: 13px;
-  position: relative;
-  top: 1px;
-  left: -1px;
-  -webkit-mask-image: url(assets/concept.svg);
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-  mask-image: url(assets/concept.svg);
-  mask-repeat: no-repeat;
-  mask-size: contain;
+.remType(@type, @bgVar, @color, @imageUrl) {
+  @{type} > .rem-text > .rich-text-editor > .EditorContainer > div::before,
+  @{type} > .rem-text > .EditorContainer:not(.rem-bullet__number):before {
+    content: "";
+    background: var(~"--@{bgVar}-icon-color", ~"@{color}");
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    position: relative;
+    top: 1px;
+    left: -1px;
+    mask-image: url("@{imageUrl}");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+  }
+
+  @{type} > .rem-text > .rich-text-editor > .EditorContainer,
+  @{type} > .rem-text > .EditorContainer:not(.rem-bullet__number) {
+    .separator-symbol {
+      color: var(~"--@{bgVar}-separator-symbol-color", ~"@{color}");
+    }
+  }
 }
 
-.rem-container--question-rem-type
-  > .rem-text
-  > .rich-text-editor
-  > .EditorContainer
-  > div::before,
-.rem-container--question-rem-type
-  > .rem-text
-  > .EditorContainer:not(.rem-bullet__number):before {
-  content: "";
-  background: var(--question-icon-color, mediumpurple);
-  display: inline-block;
-  width: 15px;
-  height: 13px;
-  position: relative;
-  top: 1px;
-  left: -2px;
-  -webkit-mask-image: url(assets/question.svg);
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-  mask-image: url(assets/question.svg);
-  mask-repeat: no-repeat;
-  mask-size: contain;
-}
-
-.rem-container--descriptor-rem-type
-  > .rem-text
-  > .rich-text-editor
-  > .EditorContainer
-  > div::before,
-.rem-container--descriptor-rem-type
-  > .rem-text
-  > .EditorContainer:not(.rem-bullet__number):before {
-  content: "";
-  background: var(--descriptor-icon-color, royalblue);
-  display: inline-block;
-  width: 16px;
-  height: 12px;
-  position: relative;
-  top: 1px;
-  left: -1px;
-  -webkit-mask-image: url(assets/descriptor.svg);
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-  mask-image: url(assets/descriptor.svg);
-  mask-repeat: no-repeat;
-  mask-size: contain;
-}
+// 默认卡片，没有特定 class，暂时用 [class*="practice"] 区分默认卡片和普通 rem
+.remType(~".rem-container--default_type-rem-type[class*='practice']", "default_type" , mediumpurple, "https://hannesfrank.github.io/remnote-css-rem-types/assets/question.svg");
+.remType(~".rem-container--descriptor-rem-type", "descriptor" , royalblue, "https://hannesfrank.github.io/remnote-css-rem-types/assets/descriptor.svg");
+.remType(~".rem-container--concept-rem-type", "concept" , green, "https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg");
+// .remType(slot, grey, "https://hannesfrank.github.io/remnote-css-rem-types/assets/slot.svg");

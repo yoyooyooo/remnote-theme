@@ -1,48 +1,36 @@
-.rem-container--concept-rem-type
+.rem-container--default_type-rem-type[class*="practice"]
   > .rem-text
   > .EditorContainer:not(.rem-bullet__number):before,
-.rem-container--concept-rem-type
+.rem-container--default_type-rem-type[class*="practice"]
   > .rem-text
   > .rich-text-editor
   > .EditorContainer
   > div:before {
-  background: var(--concept-icon-color, green);
+  background: var(--default_type-icon-color, #9370db);
   content: "";
   display: inline-block;
-  height: 13px;
+  height: 12px;
   left: -1px;
-  -webkit-mask-image: url(assets/concept.svg);
-  mask-image: url(assets/concept.svg);
+  -webkit-mask-image: url(https://hannesfrank.github.io/remnote-css-rem-types/assets/question.svg);
+  mask-image: url(https://hannesfrank.github.io/remnote-css-rem-types/assets/question.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: contain;
   mask-size: contain;
   position: relative;
   top: 1px;
-  width: 15px;
+  width: 16px;
 }
-.rem-container--question-rem-type
+.rem-container--default_type-rem-type[class*="practice"]
   > .rem-text
-  > .EditorContainer:not(.rem-bullet__number):before,
-.rem-container--question-rem-type
+  > .EditorContainer:not(.rem-bullet__number)
+  .separator-symbol,
+.rem-container--default_type-rem-type[class*="practice"]
   > .rem-text
   > .rich-text-editor
   > .EditorContainer
-  > div:before {
-  background: var(--question-icon-color, #9370db);
-  content: "";
-  display: inline-block;
-  height: 13px;
-  left: -2px;
-  -webkit-mask-image: url(assets/question.svg);
-  mask-image: url(assets/question.svg);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  position: relative;
-  top: 1px;
-  width: 15px;
+  .separator-symbol {
+  color: var(--default_type-separator-symbol-color, #9370db);
 }
 .rem-container--descriptor-rem-type
   > .rem-text
@@ -57,8 +45,8 @@
   display: inline-block;
   height: 12px;
   left: -1px;
-  -webkit-mask-image: url(assets/descriptor.svg);
-  mask-image: url(assets/descriptor.svg);
+  -webkit-mask-image: url(https://hannesfrank.github.io/remnote-css-rem-types/assets/descriptor.svg);
+  mask-image: url(https://hannesfrank.github.io/remnote-css-rem-types/assets/descriptor.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: contain;
@@ -66,4 +54,49 @@
   position: relative;
   top: 1px;
   width: 16px;
+}
+.rem-container--descriptor-rem-type
+  > .rem-text
+  > .EditorContainer:not(.rem-bullet__number)
+  .separator-symbol,
+.rem-container--descriptor-rem-type
+  > .rem-text
+  > .rich-text-editor
+  > .EditorContainer
+  .separator-symbol {
+  color: var(--descriptor-separator-symbol-color, #4169e1);
+}
+.rem-container--concept-rem-type
+  > .rem-text
+  > .EditorContainer:not(.rem-bullet__number):before,
+.rem-container--concept-rem-type
+  > .rem-text
+  > .rich-text-editor
+  > .EditorContainer
+  > div:before {
+  background: var(--concept-icon-color, green);
+  content: "";
+  display: inline-block;
+  height: 12px;
+  left: -1px;
+  -webkit-mask-image: url(https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg);
+  mask-image: url(https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  position: relative;
+  top: 1px;
+  width: 16px;
+}
+.rem-container--concept-rem-type
+  > .rem-text
+  > .EditorContainer:not(.rem-bullet__number)
+  .separator-symbol,
+.rem-container--concept-rem-type
+  > .rem-text
+  > .rich-text-editor
+  > .EditorContainer
+  .separator-symbol {
+  color: var(--concept-separator-symbol-color, green);
 }

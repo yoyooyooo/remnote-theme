@@ -75,6 +75,10 @@
 .rem-is-custom-rem-type > :first-child:last-child {
   display: flex;
 }
+.rem:not(:focus-within):not(:hover) .rem-is-custom-rem-type {
+  margin-left: -3px;
+  margin-right: -5px;
+}
 .rem:not(:focus-within):not(:hover) .rem-is-custom-rem-type ~ * {
   display: none;
 }
