@@ -1,0 +1,69 @@
+.rem-container--concept-rem-type
+  > .rem-text
+  > .EditorContainer:not(.rem-bullet__number):before,
+.rem-container--concept-rem-type
+  > .rem-text
+  > .rich-text-editor
+  > .EditorContainer
+  > div:before {
+  background: var(--concept-icon-color, green);
+  content: "";
+  display: inline-block;
+  height: 13px;
+  left: -1px;
+  -webkit-mask-image: url(assets/concept.svg);
+  mask-image: url(assets/concept.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  position: relative;
+  top: 1px;
+  width: 15px;
+}
+.rem-container--question-rem-type
+  > .rem-text
+  > .EditorContainer:not(.rem-bullet__number):before,
+.rem-container--question-rem-type
+  > .rem-text
+  > .rich-text-editor
+  > .EditorContainer
+  > div:before {
+  background: var(--question-icon-color, #9370db);
+  content: "";
+  display: inline-block;
+  height: 13px;
+  left: -2px;
+  -webkit-mask-image: url(assets/question.svg);
+  mask-image: url(assets/question.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  position: relative;
+  top: 1px;
+  width: 15px;
+}
+.rem-container--descriptor-rem-type
+  > .rem-text
+  > .EditorContainer:not(.rem-bullet__number):before,
+.rem-container--descriptor-rem-type
+  > .rem-text
+  > .rich-text-editor
+  > .EditorContainer
+  > div:before {
+  background: var(--descriptor-icon-color, #4169e1);
+  content: "";
+  display: inline-block;
+  height: 12px;
+  left: -1px;
+  -webkit-mask-image: url(assets/descriptor.svg);
+  mask-image: url(assets/descriptor.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  position: relative;
+  top: 1px;
+  width: 16px;
+}

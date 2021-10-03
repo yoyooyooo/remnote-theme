@@ -73,7 +73,13 @@
   }
 }
 
-// 页面下面的 Power-up Tag 箭头图标居中
+//======== Power-up =========
 .rem-is-custom-rem-type > div {
+  // 箭头图标居中
   display: flex;
 }
+// 平时只剩小箭头，hover/focus 时显示tag 文案
+.rem:not(:focus-within):not(:hover) .rem-is-custom-rem-type ~ * {
+  display: none;
+}
+//======== Power-up =========
