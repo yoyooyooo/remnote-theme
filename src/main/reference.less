@@ -6,6 +6,11 @@
   display: inline-flex;
 }
 
+// 块引用内的链接禁止跳转
+.rem-reference > span > .RichTextViewer > a {
+  pointer-events: none;
+}
+
 /* // 有公式的时候居中
 .RichTextViewer,
 .EditorContainer > div[data-slate-node="element"] {
