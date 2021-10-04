@@ -294,6 +294,10 @@
   color: unset;
   display: inline-flex;
 }
+.document-header-top-bar a,
+.rem-reference > span > .RichTextViewer > a {
+  pointer-events: none;
+}
 .Queue {
   height: 100vh !important;
 }
@@ -337,17 +341,17 @@ body {
   width: 12px;
 }
 .rem-container--header-1 .rem-bullet__number {
-  color: #e92525;
+  color: #c15353;
 }
 .rem-container--header-1 .rem-bullet__container .rem-bullet,
 .rem-container--header-1 .rem-bullet__container .rem-bullet--in-list {
-  background-color: #e92525;
+  background-color: #c15353;
 }
 .rem-container--header-1 .rem-bullet__container .rem-bullet__icon > path {
-  fill: #e92525;
+  fill: #c15353;
 }
 .rem-container--header-1 .rem-text.rem-header--1 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .rem-container--header-2 .rem-bullet,
 .rem-container--header-2 .rem-bullet--in-list {
@@ -356,17 +360,17 @@ body {
   width: 10px;
 }
 .rem-container--header-2 .rem-bullet__number {
-  color: #2f00ff;
+  color: #7f63fd;
 }
 .rem-container--header-2 .rem-bullet__container .rem-bullet,
 .rem-container--header-2 .rem-bullet__container .rem-bullet--in-list {
-  background-color: #2f00ff;
+  background-color: #7f63fd;
 }
 .rem-container--header-2 .rem-bullet__container .rem-bullet__icon > path {
-  fill: #2f00ff;
+  fill: #7f63fd;
 }
 .rem-container--header-2 .rem-text.rem-header--2 {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 .rem-container--header-3 .rem-bullet,
 .rem-container--header-3 .rem-bullet--in-list {
@@ -375,14 +379,14 @@ body {
   width: 8px;
 }
 .rem-container--header-3 .rem-bullet__number {
-  color: #f751f7;
+  color: #aaf547;
 }
 .rem-container--header-3 .rem-bullet__container .rem-bullet,
 .rem-container--header-3 .rem-bullet__container .rem-bullet--in-list {
-  background-color: #f751f7;
+  background-color: #aaf547;
 }
 .rem-container--header-3 .rem-bullet__container .rem-bullet__icon > path {
-  fill: #f751f7;
+  fill: #aaf547;
 }
 .rem-container--header-3 .rem-text.rem-header--3 {
   font-size: 1rem;
@@ -416,11 +420,11 @@ body {
   font-family: GlowSansSC-Regular;
   font-style: normal;
   font-weight: 400;
-  src: url(https://github.com/yoyooyooo/file/tree/main/uPic/2021/10/02/GlowSansSC-Normal-Regular.woff2)
+  src: url(https://raw.githubusercontent.com/yoyooyooo/file/main/uPic/2021/10/03/GlowSansSCRegular.woff2)
       format("woff2"),
-    url(@{https:/github.com/yoyooyooo/file/tree/main/uPic/2021/10/02/GlowSansSC-Normal-Regular.woff)
+    url(@{https:/raw.githubusercontent.com/yoyooyooo/file/main/uPic/2021/10/03/GlowSansSCRegular.woff)
       format("woff"),
-    url(@{https:/github.com/yoyooyooo/file/tree/main/uPic/2021/10/02/GlowSansSC-Normal-Regular.ttf)
+    url(@{https:/raw.githubusercontent.com/yoyooyooo/file/main/uPic/2021/10/03/GlowSansSCRegular.ttf)
       format("truetype");
 }
 @font-face {
@@ -430,15 +434,6 @@ body {
   font-weight: 400;
   src: url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/04/03/font.woff2)
     format("woff2");
-}
-.font-inter,
-.rem-text,
-body {
-  font-family: GlowSansSC-Regular !important;
-}
-#DocumentTitle .document-title.rem-text {
-  font-family: Kalam-Regular, hand-painted, DancingScript-Regular,
-    GlowSansSC-Regular, sans-serif !important;
 }
 .top-bar-container {
   bottom: 44px;
@@ -482,108 +477,6 @@ body {
   transform: scale(1.5);
   transform-origin: center;
 }
-.rem-container--default_type-rem-type[class*="practice"]
-  > .rem-text
-  > .EditorContainer:not(.rem-bullet__number):before,
-.rem-container--default_type-rem-type[class*="practice"]
-  > .rem-text
-  > .rich-text-editor
-  > .EditorContainer
-  > div:before {
-  background: var(--default_type-icon-color, #9370db);
-  content: "";
-  display: inline-block;
-  height: 12px;
-  left: -1px;
-  -webkit-mask-image: url(https://hannesfrank.github.io/remnote-css-rem-types/assets/question.svg);
-  mask-image: url(https://hannesfrank.github.io/remnote-css-rem-types/assets/question.svg);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  position: relative;
-  top: 1px;
-  width: 16px;
-}
-.rem-container--default_type-rem-type[class*="practice"]
-  > .rem-text
-  > .EditorContainer:not(.rem-bullet__number)
-  .separator-symbol,
-.rem-container--default_type-rem-type[class*="practice"]
-  > .rem-text
-  > .rich-text-editor
-  > .EditorContainer
-  .separator-symbol {
-  color: var(--default_type-separator-symbol-color, #9370db);
-}
-.rem-container--descriptor-rem-type
-  > .rem-text
-  > .EditorContainer:not(.rem-bullet__number):before,
-.rem-container--descriptor-rem-type
-  > .rem-text
-  > .rich-text-editor
-  > .EditorContainer
-  > div:before {
-  background: var(--descriptor-icon-color, #4169e1);
-  content: "";
-  display: inline-block;
-  height: 12px;
-  left: -1px;
-  -webkit-mask-image: url(https://hannesfrank.github.io/remnote-css-rem-types/assets/descriptor.svg);
-  mask-image: url(https://hannesfrank.github.io/remnote-css-rem-types/assets/descriptor.svg);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  position: relative;
-  top: 1px;
-  width: 16px;
-}
-.rem-container--descriptor-rem-type
-  > .rem-text
-  > .EditorContainer:not(.rem-bullet__number)
-  .separator-symbol,
-.rem-container--descriptor-rem-type
-  > .rem-text
-  > .rich-text-editor
-  > .EditorContainer
-  .separator-symbol {
-  color: var(--descriptor-separator-symbol-color, #4169e1);
-}
-.rem-container--concept-rem-type
-  > .rem-text
-  > .EditorContainer:not(.rem-bullet__number):before,
-.rem-container--concept-rem-type
-  > .rem-text
-  > .rich-text-editor
-  > .EditorContainer
-  > div:before {
-  background: var(--concept-icon-color, green);
-  content: "";
-  display: inline-block;
-  height: 12px;
-  left: -1px;
-  -webkit-mask-image: url(https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg);
-  mask-image: url(https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  position: relative;
-  top: 1px;
-  width: 16px;
-}
-.rem-container--concept-rem-type
-  > .rem-text
-  > .EditorContainer:not(.rem-bullet__number)
-  .separator-symbol,
-.rem-container--concept-rem-type
-  > .rem-text
-  > .rich-text-editor
-  > .EditorContainer
-  .separator-symbol {
-  color: var(--concept-separator-symbol-color, green);
-}
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -599,7 +492,7 @@ body {
 }
 .rem-text .RichTextViewer .quote,
 .rem-text [data-slate-node="text"] .quote {
-  background-color: #e0e1e1;
+  background-color: #e5e5e5;
   margin-left: 2px;
   margin-right: 2px;
 }

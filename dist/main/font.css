@@ -27,11 +27,11 @@
   font-family: GlowSansSC-Regular;
   font-style: normal;
   font-weight: 400;
-  src: url(https://github.com/yoyooyooo/file/tree/main/uPic/2021/10/02/GlowSansSC-Normal-Regular.woff2)
+  src: url(https://raw.githubusercontent.com/yoyooyooo/file/main/uPic/2021/10/03/GlowSansSCRegular.woff2)
       format("woff2"),
-    url(@{https:/github.com/yoyooyooo/file/tree/main/uPic/2021/10/02/GlowSansSC-Normal-Regular.woff)
+    url(@{https:/raw.githubusercontent.com/yoyooyooo/file/main/uPic/2021/10/03/GlowSansSCRegular.woff)
       format("woff"),
-    url(@{https:/github.com/yoyooyooo/file/tree/main/uPic/2021/10/02/GlowSansSC-Normal-Regular.ttf)
+    url(@{https:/raw.githubusercontent.com/yoyooyooo/file/main/uPic/2021/10/03/GlowSansSCRegular.ttf)
       format("truetype");
 }
 @font-face {
@@ -41,13 +41,4 @@
   font-weight: 400;
   src: url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/04/03/font.woff2)
     format("woff2");
-}
-.font-inter,
-.rem-text,
-body {
-  font-family: GlowSansSC-Regular !important;
-}
-#DocumentTitle .document-title.rem-text {
-  font-family: Kalam-Regular, hand-painted, DancingScript-Regular,
-    GlowSansSC-Regular, sans-serif !important;
 }
