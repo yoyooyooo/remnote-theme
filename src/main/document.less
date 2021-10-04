@@ -8,3 +8,16 @@
     top: 3px;
   }
 }
+
+// 链接下划线
+.rich-text-editor a {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: rgb(0, 0, 139, 18%);
+}
+// 块引用内链接去掉下划线
+.rem-reference-link {
+  .rich-text-editor a {
+    text-decoration: none;
+  }
+}
