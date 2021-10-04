@@ -6,8 +6,9 @@
   display: inline-flex;
 }
 
-// 块引用内的链接禁止跳转
-.rem-reference > span > .RichTextViewer > a {
+// 禁止跳转: 块引用内的链接，面包屑内的链接
+.rem-reference > span > .RichTextViewer > a,
+.document-header-top-bar a {
   pointer-events: none;
 }
 
