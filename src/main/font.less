@@ -36,20 +36,21 @@
 .cdnFont("GlowSansSC", "@{cdnPrefix2}/GlowSansSC-Normal-Thin", 100, normal);
 // .cdnFont("GlowSansSC", "@{cdnPrefix2}/GlowSansSC-Normal-Book", normal, normal);
 
-// body,
-// .rem-text,
-// .font-inter {
-//   font-family: "GlowSansSC-Regular" !important;
-//   // -webkit-font-smoothing: antialiased;
-//   // font-weight: 500;
-// }
-// #DocumentTitle .document-title.rem-text {
-//   font-family: "Kalam-Regular", "hand-painted", "DancingScript-Regular",
-//     "GlowSansSC-Regular", sans-serif !important;
-//   //   -webkit-font-smoothing: antialiased;
-//   //   font-weight: 500;
-// }
+body,
+.rem-text,
+.font-inter {
+  font-family: "GlowSansSC" !important;
+  // -webkit-font-smoothing: antialiased;
+  // font-weight: 500;
+}
+#DocumentTitle .document-title.rem-text {
+  font-family: "Kalam-Regular", "hand-painted", "DancingScript-Regular",
+    "GlowSansSC", sans-serif !important;
+  //   -webkit-font-smoothing: antialiased;
+  //   font-weight: 500;
+}
 
+// 左边栏字体色
 body,
 #document,
 .tile__document,
@@ -57,6 +58,7 @@ body,
   color: var(--main-font-color, #555);
 }
 
+// 被引用部分面包屑第一项字体
 .portal-tree-node-box .portal-tree-transient-node-box {
   .rem .rem-container .rem-text > .EditorContainer {
     color: rgb(197, 64, 64);

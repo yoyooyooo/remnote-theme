@@ -505,6 +505,15 @@ body {
     url(https://raw.githubusercontent.com/yoyooyooo/file/main/uPic/2021/10/05/GlowSansSC-Normal-Thin.woff)
       format("woff");
 }
+.font-inter,
+.rem-text,
+body {
+  font-family: GlowSansSC !important;
+}
+#DocumentTitle .document-title.rem-text {
+  font-family: Kalam-Regular, hand-painted, DancingScript-Regular, GlowSansSC,
+    sans-serif !important;
+}
 #document,
 #document-sidebar,
 .tile__document,
