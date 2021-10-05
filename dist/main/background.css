@@ -1,9 +1,1 @@
-#document,
-#document-sidebar,
-.tile__document,
-body {
-  background: var(--main-background-colo, #f6f5f0);
-}
-#multiple-windows > .split > .gutter {
-  background-color: #e2dfcf;
-}
+#document,#document-sidebar,.tile__document,body{background:var(--main-background-colo,#f6f5f0)}#multiple-windows>.split>.gutter{background-color:#e2dfcf}
