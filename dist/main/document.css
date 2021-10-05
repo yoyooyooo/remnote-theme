@@ -14,3 +14,25 @@
 .rem-reference-link a {
   text-decoration: none;
 }
+#document,
+#document-sidebar,
+.tile__document,
+body {
+  color: var(--main-font-color, #555);
+}
+.portal-tree-node-box
+  .portal-tree-transient-node-box
+  .rem
+  .rem-container
+  .rem-text
+  > .EditorContainer {
+  color: #c54040;
+  font-weight: 700;
+}
+.portal-tree-node-box
+  .portal-tree-transient-node-box
+  .TreeNode
+  .rem-text
+  > .EditorContainer {
+  color: var(--main-font-color, #555) !important;
+}

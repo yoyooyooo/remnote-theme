@@ -1,132 +1,3 @@
-@font-face {
-  font-display: swap;
-  font-family: Kalam-Regular;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/Kalam-Regular.woff2)
-      format("woff2"),
-    url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/Kalam-Regular.woff)
-      format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: DancingScript-Regular;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/DancingScript-Regular.woff2)
-      format("woff2"),
-    url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02/DancingScript-Regular.woff)
-      format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: hand-painted;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/04/03/font.woff2)
-    format("woff2");
-}
-@font-face {
-  font-display: swap;
-  font-family: GlowSansSC;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://raw.githubusercontent.com/yoyooyooo/file/main/uPic/2021/10/05/GlowSansSC-Normal-Bold.woff2)
-      format("woff2"),
-    url(https://raw.githubusercontent.com/yoyooyooo/file/main/uPic/2021/10/05/GlowSansSC-Normal-Bold.woff)
-      format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: GlowSansSC;
-  font-style: normal;
-  font-weight: 900;
-  src: url(https://raw.githubusercontent.com/yoyooyooo/file/main/uPic/2021/10/05/GlowSansSC-Normal-Heavy.woff2)
-      format("woff2"),
-    url(https://raw.githubusercontent.com/yoyooyooo/file/main/uPic/2021/10/05/GlowSansSC-Normal-Heavy.woff)
-      format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: GlowSansSC;
-  font-style: normal;
-  font-weight: 500;
-  src: url(https://raw.githubusercontent.com/yoyooyooo/file/main/uPic/2021/10/05/GlowSansSC-Normal-Medium.woff2)
-      format("woff2"),
-    url(https://raw.githubusercontent.com/yoyooyooo/file/main/uPic/2021/10/05/GlowSansSC-Normal-Medium.woff)
-      format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: GlowSansSC;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://raw.githubusercontent.com/yoyooyooo/file/main/uPic/2021/10/05/GlowSansSC-Normal-Regular.woff2)
-      format("woff2"),
-    url(https://raw.githubusercontent.com/yoyooyooo/file/main/uPic/2021/10/05/GlowSansSC-Normal-Regular.woff)
-      format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: GlowSansSC;
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://raw.githubusercontent.com/yoyooyooo/file/main/uPic/2021/10/05/GlowSansSC-Normal-Light.woff2)
-      format("woff2"),
-    url(https://raw.githubusercontent.com/yoyooyooo/file/main/uPic/2021/10/05/GlowSansSC-Normal-Light.woff)
-      format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: GlowSansSC;
-  font-style: normal;
-  font-weight: 200;
-  src: url(https://raw.githubusercontent.com/yoyooyooo/file/main/uPic/2021/10/05/GlowSansSC-Normal-ExtraLight.woff2)
-      format("woff2"),
-    url(https://raw.githubusercontent.com/yoyooyooo/file/main/uPic/2021/10/05/GlowSansSC-Normal-ExtraLight.woff)
-      format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: GlowSansSC;
-  font-style: normal;
-  font-weight: 100;
-  src: url(https://raw.githubusercontent.com/yoyooyooo/file/main/uPic/2021/10/05/GlowSansSC-Normal-Thin.woff2)
-      format("woff2"),
-    url(https://raw.githubusercontent.com/yoyooyooo/file/main/uPic/2021/10/05/GlowSansSC-Normal-Thin.woff)
-      format("woff");
-}
-.font-inter,
-.rem-text,
-body {
-  font-family: GlowSansSC !important;
-}
-#DocumentTitle .document-title.rem-text {
-  font-family: Kalam-Regular, hand-painted, DancingScript-Regular, GlowSansSC,
-    sans-serif !important;
-}
-#document,
-#document-sidebar,
-.tile__document,
-body {
-  color: var(--main-font-color, #555);
-}
-.portal-tree-node-box
-  .portal-tree-transient-node-box
-  .rem
-  .rem-container
-  .rem-text
-  > .EditorContainer {
-  color: #c54040;
-  font-weight: 700;
-}
-.portal-tree-node-box
-  .portal-tree-transient-node-box
-  .TreeNode
-  .rem-text
-  > .EditorContainer {
-  color: var(--main-font-color, #555) !important;
-}
 .highlight-color--red,
 .pdf-viewer__highlight-container--red .AreaHighlight,
 .pdf-viewer__highlight-container--red .Highlight__part {
@@ -620,4 +491,26 @@ body {
 }
 .rem-reference-link a {
   text-decoration: none;
+}
+#document,
+#document-sidebar,
+.tile__document,
+body {
+  color: var(--main-font-color, #555);
+}
+.portal-tree-node-box
+  .portal-tree-transient-node-box
+  .rem
+  .rem-container
+  .rem-text
+  > .EditorContainer {
+  color: #c54040;
+  font-weight: 700;
+}
+.portal-tree-node-box
+  .portal-tree-transient-node-box
+  .TreeNode
+  .rem-text
+  > .EditorContainer {
+  color: var(--main-font-color, #555) !important;
 }

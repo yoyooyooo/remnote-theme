@@ -98,32 +98,11 @@
 }
 .font-inter,
 .rem-text,
-body {
+body,
+html {
   font-family: GlowSansSC !important;
 }
 #DocumentTitle .document-title.rem-text {
   font-family: Kalam-Regular, hand-painted, DancingScript-Regular, GlowSansSC,
     sans-serif !important;
-}
-#document,
-#document-sidebar,
-.tile__document,
-body {
-  color: var(--main-font-color, #555);
-}
-.portal-tree-node-box
-  .portal-tree-transient-node-box
-  .rem
-  .rem-container
-  .rem-text
-  > .EditorContainer {
-  color: #c54040;
-  font-weight: 700;
-}
-.portal-tree-node-box
-  .portal-tree-transient-node-box
-  .TreeNode
-  .rem-text
-  > .EditorContainer {
-  color: var(--main-font-color, #555) !important;
 }

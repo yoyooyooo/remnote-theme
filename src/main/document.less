@@ -19,3 +19,22 @@
 .rem-reference-link a {
   text-decoration: none;
 }
+
+// 左边栏字体色
+body,
+#document,
+.tile__document,
+#document-sidebar {
+  color: var(--main-font-color, #555);
+}
+
+// 被引用部分面包屑第一项字体
+.portal-tree-node-box .portal-tree-transient-node-box {
+  .rem .rem-container .rem-text > .EditorContainer {
+    color: rgb(197, 64, 64);
+    font-weight: bold;
+  }
+  .TreeNode .rem-text > .EditorContainer {
+    color: var(--main-font-color, #555) !important;
+  }
+}
