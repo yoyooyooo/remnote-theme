@@ -1,21 +1,20 @@
 @cdnPrefix1: "https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2021/10/02";
-@cdnPrefix2: "https://raw.githubusercontent.com/yoyooyooo/file/main/uPic/2021/10/03";
+@cdnPrefix2: "https://raw.githubusercontent.com/yoyooyooo/file/main/uPic/2021/10/05";
 
-.cdnFont(@fontFamily, @filename) {
+.cdnFont(@fontFamily, @filename, @fontWeight, @fontStyle) {
   @font-face {
     font-family: "@{fontFamily}";
     font-display: swap;
-    font-weight: normal;
-    font-style: normal;
+    font-weight: @fontWeight;
+    font-style: @fontStyle;
     src: url("@{filename}.woff2") format("woff2"),
-      url("@{@{filename}.woff") format("woff"),
-      url("@{@{filename}.ttf") format("truetype");
+      url("@{filename}.woff") format("woff"),
+      /* url("@{filename}.ttf") format("truetype") */;
   }
 }
 
-.cdnFont("Kalam-Regular", "@{cdnPrefix1}/Kalam-Regular");
-.cdnFont("DancingScript-Regular", "@{cdnPrefix1}/DancingScript-Regular");
-.cdnFont("GlowSansSC-Regular", "@{cdnPrefix2}/GlowSansSCRegular");
+.cdnFont("Kalam-Regular", "@{cdnPrefix1}/Kalam-Regular", normal, normal);
+.cdnFont("DancingScript-Regular", "@{cdnPrefix1}/DancingScript-Regular", normal, normal);
 
 @font-face {
   font-family: "hand-painted";
@@ -25,6 +24,17 @@
   font-weight: normal;
   font-style: normal;
 }
+
+// 未来荧黑
+.cdnFont("GlowSansSC", "@{cdnPrefix2}/GlowSansSC-Normal-Bold", bold, normal);
+.cdnFont("GlowSansSC", "@{cdnPrefix2}/GlowSansSC-Normal-Heavy", 900, normal);
+// .cdnFont("GlowSansSC", "@{cdnPrefix2}/GlowSansSC-Normal-ExtraBold", bold, normal);
+.cdnFont("GlowSansSC", "@{cdnPrefix2}/GlowSansSC-Normal-Medium", 500, normal);
+.cdnFont("GlowSansSC", "@{cdnPrefix2}/GlowSansSC-Normal-Regular", normal, normal);
+.cdnFont("GlowSansSC", "@{cdnPrefix2}/GlowSansSC-Normal-Light", 300, normal);
+.cdnFont("GlowSansSC", "@{cdnPrefix2}/GlowSansSC-Normal-ExtraLight", 200, normal);
+.cdnFont("GlowSansSC", "@{cdnPrefix2}/GlowSansSC-Normal-Thin", 100, normal);
+// .cdnFont("GlowSansSC", "@{cdnPrefix2}/GlowSansSC-Normal-Book", normal, normal);
 
 // body,
 // .rem-text,
