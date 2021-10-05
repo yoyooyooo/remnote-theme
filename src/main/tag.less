@@ -84,7 +84,8 @@
   display: flex;
 }
 // 平时只剩小箭头，hover/focus 时显示tag 文案
-.rem:not(:focus-within):not(:hover) .rem-is-custom-rem-type {
+.rem:not(:focus-within):not(:hover):not(data-rem-tags="aliases")
+  .rem-is-custom-rem-type {
   & {
     margin-left: -3px;
     margin-right: -5px;
