@@ -1,1 +1,29 @@
-.document-header-top-bar .flex{display:inline}.document-header-top-bar .parent-link+span>svg{position:relative;top:3px}.rem a{color:#3434cf;-webkit-text-decoration-color:#6a6adf;text-decoration-color:#6a6adf;text-underline-position:under}.rem-reference-link a{text-decoration:none}#document,#document-sidebar,.tile__document,body{color:var(--main-font-color,#555)}.portal-tree-node-box .portal-tree-transient-node-box .rem .rem-container .rem-text>.EditorContainer{color:#c54040;font-weight:700}.portal-tree-node-box .portal-tree-transient-node-box .TreeNode .rem-text>.EditorContainer{color:var(--main-font-color,#555)!important}
+.document-header-top-bar .flex {
+  display: inline;
+}
+.document-header-top-bar .parent-link + span > svg {
+  position: relative;
+  top: 3px;
+}
+.rem a {
+  color: #3434cf;
+  -webkit-text-decoration-color: #6a6adf;
+  text-decoration-color: #6a6adf;
+  text-underline-position: under;
+}
+.rem-reference-link a {
+  text-decoration: none;
+}
+#document,
+#document-sidebar,
+.tile__document,
+body {
+  color: var(--main-font-color, #555);
+}
+.portal-tree-node-box .rem .rem-container .rem-text > .EditorContainer {
+  color: #c54040;
+  font-weight: 700;
+}
+.portal-tree-node-box .TreeNode .rem-text > .EditorContainer {
+  color: var(--main-font-color, #555) !important;
+}

@@ -20,10 +20,13 @@
     }
     .rem-text.rem-header--@{h} {
       font-size: @fontSize;
+      .rem-bullet__number .rounded-full {
+        margin-top: ~"calc(@{fontSize} - 0.75rem)";
+      }
     }
   }
 }
 
 .header(1, hsl(0, 51%, 54%), 12px, 1.1rem);
 .header(2, hsl(251, 97%, 69%), 10px, 1.05rem);
-.header(3, hsl(86, 90%, 62%), 8px, 1rem);
+.header(3, hsl(133, 90%, 62%), 8px, 1rem);
