@@ -50,19 +50,19 @@
 }
 .rem-container--header-3 .rem-bullet,
 .rem-container--header-3 .rem-bullet--in-list {
-  border-color: #a8faba;
+  border-color: #07cf33;
   height: 8px;
   width: 8px;
 }
 .rem-container--header-3 .rem-bullet__number {
-  color: #47f56d;
+  color: #046c1b;
 }
 .rem-container--header-3 .rem-bullet__container .rem-bullet,
 .rem-container--header-3 .rem-bullet__container .rem-bullet--in-list {
-  background-color: #47f56d;
+  background-color: #046c1b;
 }
 .rem-container--header-3 .rem-bullet__container .rem-bullet__icon > path {
-  fill: #47f56d;
+  fill: #046c1b;
 }
 .rem-container--header-3 .rem-text.rem-header--3 {
   font-size: 1rem;
