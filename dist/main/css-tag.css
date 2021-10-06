@@ -56,7 +56,7 @@
 }
 .rem[data-rem-tags~="blockquote"]
   > div:first-child
-  .rem-container--compact
+  .rem-container
   .rem-text
   > div:before {
   background: #6e6e6e;
@@ -88,7 +88,7 @@
 }
 .rem[data-rem-tags~="warn"]
   > div:first-child
-  .rem-container--compact
+  .rem-container
   .rem-text
   > div:before {
   background: #f1b13a;

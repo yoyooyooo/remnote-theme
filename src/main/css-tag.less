@@ -34,8 +34,25 @@
 
 // 引用类样式
 .quoteTag(@tagName, @borderColor, @bgcolor, @iconUrl) {
+  .rem[data-rem-tags~=~"@{tagName}"] > div:first-child .rem-text > div {
+    background-color: @bgcolor;
+    border-left: 5px solid @borderColor;
+    padding: 6px 11px !important;
+  }
+  .rem[data-rem-tags~="@{tagName}"]
+    > div:first-child
+    .rem-container--compact
+    .rem-text
+    > div {
+    margin: -2.5px 0;
+  }
+
   .prefixIcon (@url) when not (@url = "") {
-    &::before {
+    .rem[data-rem-tags~="@{tagName}"]
+      > div:first-child
+      .rem-container
+      .rem-text
+      > div::before {
       content: "";
       float: left;
       mask-image: url(@url);
@@ -49,20 +66,7 @@
       background: @borderColor;
     }
   }
-
-  .rem[data-rem-tags~=~"@{tagName}"] > div:first-child .rem-text > div {
-    background-color: @bgcolor;
-    border-left: 5px solid @borderColor;
-    padding: 6px 11px !important;
-  }
-  .rem[data-rem-tags~="@{tagName}"]
-    > div:first-child
-    .rem-container--compact
-    .rem-text
-    > div {
-    margin: -2.5px 0;
-    .prefixIcon(@iconUrl);
-  }
+  .prefixIcon(@iconUrl);
 }
 
 .quoteTag("blockquote", #6e6e6e, #e8e8e8, "https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg");
