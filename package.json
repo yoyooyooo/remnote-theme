@@ -2,8 +2,9 @@
   "name": "rem-theme",
   "scripts": {
     "build": "rm -rf dist && npm run build:main",
-    "build:main": "gulp main",
     "build:beta": "gulp beta",
+    "watch:main": "gulp main:main",
+    "watch:beta": "gulp beta:main",
     "format": "prettier --loglevel warn --write \"**/*.{js,css,less,md}\"",
     "posttest": "npm run format",
     "prepare": "husky install"
