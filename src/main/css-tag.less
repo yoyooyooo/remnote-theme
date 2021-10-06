@@ -31,16 +31,38 @@
 
 // =============== 美化标签 ===============
 
-// 引用
-.rem[data-rem-tags~="blockquote"] > div:first-child .rem-text > div {
-  background-color: #f4f4f4;
-  border-left: 5px solid #ffcc6f;
-  padding: 6px 11px !important;
+// 引用类样式
+.quoteTag(@tagName, @borderColor, @bgcolor, @iconUrl) {
+  .prefixIcon (@url) when not (@url = "") {
+    & ::before {
+      content: "";
+      float: left;
+      mask-image: url(@url);
+      mask-repeat: no-repeat;
+      mask-size: contain;
+      position: relative;
+      top: 3px;
+      left: -1px;
+      width: 20px;
+      height: 16px;
+      background: @borderColor;
+    }
+  }
+
+  .rem[data-rem-tags~=~"@{tagName}"] > div:first-child .rem-text > div {
+    background-color: @bgcolor;
+    border-left: 5px solid @borderColor;
+    padding: 6px 11px !important;
+  }
+  .rem[data-rem-tags~="@{tagName}"]
+    > div:first-child
+    .rem-container--compact
+    .rem-text
+    > div {
+    margin: -2.5px 0;
+    .prefixIcon(@iconUrl);
+  }
 }
-.rem[data-rem-tags~="blockquote"]
-  > div:first-child
-  .rem-container--compact
-  .rem-text
-  > div {
-  margin: -2.5px 0;
-}
+
+.quoteTag("blockquote", #6e6e6e, #e8e8e8, "https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg");
+.quoteTag("warn", #f1b13a, #fff8e8, "https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg");

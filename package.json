@@ -3,8 +3,8 @@
   "scripts": {
     "build": "rm -rf dist && npm run build:main",
     "build:beta": "gulp beta",
-    "watch:main": "gulp main:main",
-    "watch:beta": "gulp beta:main",
+    "watch:main": "gulp main:watch",
+    "watch:beta": "gulp beta:watch",
     "format": "prettier --loglevel warn --write \"**/*.{js,css,less,md}\"",
     "posttest": "npm run format",
     "prepare": "husky install"

@@ -284,8 +284,8 @@
   display: inline-flex;
 }
 .rem[data-rem-tags~="blockquote"] > div:first-child .rem-text > div {
-  background-color: #f4f4f4;
-  border-left: 5px solid #ffcc6f;
+  background-color: #e8e8e8;
+  border-left: 5px solid #6e6e6e;
   padding: 6px 11px !important;
 }
 .rem[data-rem-tags~="blockquote"]
@@ -294,6 +294,60 @@
   .rem-text
   > div {
   margin: -2.5px 0;
+}
+.rem[data-rem-tags~="blockquote"]
+  > div:first-child
+  .rem-container--compact
+  .rem-text
+  > div
+  :before {
+  background: #6e6e6e;
+  content: "";
+  float: left;
+  height: 16px;
+  left: -1px;
+  -webkit-mask-image: url(https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg);
+  mask-image: url(https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  position: relative;
+  top: 3px;
+  width: 20px;
+}
+.rem[data-rem-tags~="warn"] > div:first-child .rem-text > div {
+  background-color: #fff8e8;
+  border-left: 5px solid #f1b13a;
+  padding: 6px 11px !important;
+}
+.rem[data-rem-tags~="warn"]
+  > div:first-child
+  .rem-container--compact
+  .rem-text
+  > div {
+  margin: -2.5px 0;
+}
+.rem[data-rem-tags~="warn"]
+  > div:first-child
+  .rem-container--compact
+  .rem-text
+  > div
+  :before {
+  background: #f1b13a;
+  content: "";
+  float: left;
+  height: 16px;
+  left: -1px;
+  -webkit-mask-image: url(https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg);
+  mask-image: url(https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  position: relative;
+  top: 3px;
+  width: 20px;
 }
 .rem-reference-link {
   background-color: hsla(0, 1%, 81%, 0.2);
