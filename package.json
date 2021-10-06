@@ -2,6 +2,7 @@
   "name": "rem-theme",
   "scripts": {
     "build": "rm -rf dist && npm run build:main",
+    "build:main": "gulp main",
     "build:beta": "gulp beta",
     "watch:main": "gulp main:watch",
     "watch:beta": "gulp beta:watch",
