@@ -1,6 +1,7 @@
 // tag 容器收缩成小圆点，hover 时展示
 .rem[data-rem-tags~="htag"],
-.rem[data-rem-tags="blockquote"] {
+.rem[data-rem-tags="blockquote"],
+.rem[data-rem-tags="warn"] {
   .hierarchy-editor__tag-bar {
     width: auto;
     right: 0;
@@ -34,7 +35,7 @@
 // 引用类样式
 .quoteTag(@tagName, @borderColor, @bgcolor, @iconUrl) {
   .prefixIcon (@url) when not (@url = "") {
-    & ::before {
+    &::before {
       content: "";
       float: left;
       mask-image: url(@url);

@@ -1,4 +1,5 @@
 .rem[data-rem-tags="blockquote"] .hierarchy-editor__tag-bar,
+.rem[data-rem-tags="warn"] .hierarchy-editor__tag-bar,
 .rem[data-rem-tags~="htag"] .hierarchy-editor__tag-bar {
   background-color: #038815;
   border-radius: 50%;
@@ -12,12 +13,16 @@
 .rem[data-rem-tags="blockquote"]
   .hierarchy-editor__tag-bar
   .hierarchy-editor__tag-bar__tag,
+.rem[data-rem-tags="warn"]
+  .hierarchy-editor__tag-bar
+  .hierarchy-editor__tag-bar__tag,
 .rem[data-rem-tags~="htag"]
   .hierarchy-editor__tag-bar
   .hierarchy-editor__tag-bar__tag {
   display: none;
 }
 .rem[data-rem-tags="blockquote"] .hierarchy-editor__tag-bar:hover,
+.rem[data-rem-tags="warn"] .hierarchy-editor__tag-bar:hover,
 .rem[data-rem-tags~="htag"] .hierarchy-editor__tag-bar:hover {
   background-color: #fff;
   border-radius: unset;
@@ -27,6 +32,9 @@
   width: unset;
 }
 .rem[data-rem-tags="blockquote"]
+  .hierarchy-editor__tag-bar:hover
+  .hierarchy-editor__tag-bar__tag,
+.rem[data-rem-tags="warn"]
   .hierarchy-editor__tag-bar:hover
   .hierarchy-editor__tag-bar__tag,
 .rem[data-rem-tags~="htag"]
@@ -50,8 +58,7 @@
   > div:first-child
   .rem-container--compact
   .rem-text
-  > div
-  :before {
+  > div:before {
   background: #6e6e6e;
   content: "";
   float: left;
@@ -83,8 +90,7 @@
   > div:first-child
   .rem-container--compact
   .rem-text
-  > div
-  :before {
+  > div:before {
   background: #f1b13a;
   content: "";
   float: left;
