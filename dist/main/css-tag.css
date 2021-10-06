@@ -42,6 +42,9 @@
   .hierarchy-editor__tag-bar__tag {
   display: inline-flex;
 }
+.RichTextViewer {
+  overflow-wrap: unset !important;
+}
 .rem[data-rem-tags~="blockquote"] > div:first-child .rem-text > div {
   background-color: #e8e8e8;
   border-left: 5px solid #6e6e6e;

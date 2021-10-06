@@ -29,6 +29,10 @@
     }
   }
 }
+// 会有因为断行问题，hover/focus 时宽度变动而抖动的情况，先这样fix
+.RichTextViewer {
+  overflow-wrap: unset !important;
+}
 
 // =============== 美化标签 ===============
 
