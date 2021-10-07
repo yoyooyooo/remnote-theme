@@ -1,9 +1,11 @@
 // 块引用
-.rem-reference-link {
-  background-color: rgba(208, 207, 207, 0.2);
-  border-bottom: 1px dashed #bbb;
-  color: unset;
-  display: inline-flex;
+.rem-reference-container:not([data-rem-tags="emoji"]) {
+  .rem-reference-link {
+    background-color: rgba(208, 207, 207, 0.2);
+    border-bottom: 1px dashed #bbb;
+    color: unset;
+    display: inline-flex;
+  }
 }
 
 // 禁止跳转: 块引用内的链接，面包屑内的链接
