@@ -20,10 +20,42 @@
 body {
   color: var(--main-font-color, #555);
 }
-.portal-tree-node-box .rem .rem-container .rem-text > .EditorContainer {
-  color: #c54040;
+#hierarchy-editor
+  > div:nth-child(2)
+  > div
+  > div:nth-child(2)
+  > div
+  > .portal-tree-node-box
+  .rem
+  .rem-container
+  .rem-text
+  > .EditorContainer {
+  background-color: #feb3f4;
+  border-radius: 10px;
+  color: #414141;
   font-weight: 700;
 }
-.portal-tree-node-box .TreeNode .rem-text > .EditorContainer {
+#hierarchy-editor
+  > div:nth-child(2)
+  > div
+  > div:nth-child(2)
+  > div
+  > .portal-tree-node-box
+  .TreeNode
+  .rem-text
+  > .EditorContainer {
+  background-color: unset !important;
+  border-radius: 0 !important;
   color: var(--main-font-color, #555) !important;
+  font-weight: unset !important;
+}
+#hierarchy-editor
+  > div:nth-child(2)
+  > div
+  > div:nth-child(2)
+  > div
+  > .portal-tree-node-box
+  .RichTextViewer
+  a {
+  pointer-events: none;
 }

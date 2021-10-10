@@ -358,7 +358,39 @@
   top: 3px;
   width: 20px;
 }
-.rem-reference-link {
+.rem[data-rem-tags~="idea"] > div:first-child .rem-text > div {
+  background-color: #e0f2dd;
+  border-left: 5px solid #25c007;
+  padding: 6px 11px !important;
+}
+.rem[data-rem-tags~="idea"]
+  > div:first-child
+  .rem-container--compact
+  .rem-text
+  > div {
+  margin: -2.5px 0;
+}
+.rem[data-rem-tags~="idea"]
+  > div:first-child
+  .rem-container
+  .rem-text
+  > div:before {
+  background: #25c007;
+  content: "";
+  float: left;
+  height: 16px;
+  left: -1px;
+  -webkit-mask-image: url(https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg);
+  mask-image: url(https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  position: relative;
+  top: 3px;
+  width: 20px;
+}
+.rem-reference-container:not([data-rem-tags="emoji"]) .rem-reference-link {
   background-color: hsla(0, 1%, 81%, 0.2);
   border-bottom: 1px dashed #bbb;
   color: unset;
@@ -373,6 +405,7 @@
 }
 #document,
 #document-sidebar,
+.document--narrow,
 .tile__document,
 body {
   background: var(--main-background-colo, #f6f5f0);
@@ -383,12 +416,14 @@ body {
 #content {
   position: relative;
 }
+#content .document-sidebar--collapsed--horizontal,
 #content .document-sidebar--collapsed--vertical {
   left: 0;
   position: absolute;
   top: 0;
   width: 4px;
 }
+#content .document-sidebar--collapsed--horizontal > div,
 #content .document-sidebar--collapsed--vertical > div {
   bottom: 0;
   left: 0;
@@ -398,6 +433,7 @@ body {
   top: 0;
   z-index: 9;
 }
+#content .document-sidebar--collapsed--horizontal > div > div,
 #content .document-sidebar--collapsed--vertical > div > div {
   height: 100%;
   left: 0;
@@ -573,10 +609,42 @@ body {
 body {
   color: var(--main-font-color, #555);
 }
-.portal-tree-node-box .rem .rem-container .rem-text > .EditorContainer {
-  color: #c54040;
+#hierarchy-editor
+  > div:nth-child(2)
+  > div
+  > div:nth-child(2)
+  > div
+  > .portal-tree-node-box
+  .rem
+  .rem-container
+  .rem-text
+  > .EditorContainer {
+  background-color: #feb3f4;
+  border-radius: 10px;
+  color: #414141;
   font-weight: 700;
 }
-.portal-tree-node-box .TreeNode .rem-text > .EditorContainer {
+#hierarchy-editor
+  > div:nth-child(2)
+  > div
+  > div:nth-child(2)
+  > div
+  > .portal-tree-node-box
+  .TreeNode
+  .rem-text
+  > .EditorContainer {
+  background-color: unset !important;
+  border-radius: 0 !important;
   color: var(--main-font-color, #555) !important;
+  font-weight: unset !important;
+}
+#hierarchy-editor
+  > div:nth-child(2)
+  > div
+  > div:nth-child(2)
+  > div
+  > .portal-tree-node-box
+  .RichTextViewer
+  a {
+  pointer-events: none;
 }
