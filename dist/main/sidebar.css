@@ -1,14 +1,13 @@
 #content {
   position: relative;
 }
-#content .document-sidebar--collapsed--horizontal,
 #content .document-sidebar--collapsed--vertical {
+  height: 100vh;
   left: 0;
   position: absolute;
   top: 0;
   width: 4px;
 }
-#content .document-sidebar--collapsed--horizontal > div,
 #content .document-sidebar--collapsed--vertical > div {
   bottom: 0;
   left: 0;
@@ -18,11 +17,33 @@
   top: 0;
   z-index: 9;
 }
-#content .document-sidebar--collapsed--horizontal > div > div,
 #content .document-sidebar--collapsed--vertical > div > div {
   height: 100%;
   left: 0;
   width: 100%;
+}
+@media (min-width: 480px) {
+  #content .document-sidebar--collapsed--horizontal {
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 4px;
+  }
+  #content .document-sidebar--collapsed--horizontal > div {
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9;
+  }
+  #content .document-sidebar--collapsed--horizontal > div > div {
+    height: 100%;
+    left: 0;
+    width: 100%;
+  }
 }
 #document-sidebar .accordion > div:first-child > div {
   background-color: #f5e4d0;
