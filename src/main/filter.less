@@ -1,0 +1,15 @@
+@import url("./tag.less");
+
+#hierarchy-editor__ctrl-f .hierarchy-editor__tag-bar {
+  position: absolute;
+  left: 100%;
+  width: 300px;
+  flex-wrap: wrap;
+  top: 10px;
+  .tagbar();
+
+  > span:not(.hierarchy-editor__tag-bar__tag) {
+    height: 20px;
+    margin-bottom: 4px;
+  }
+}
