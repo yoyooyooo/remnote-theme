@@ -70,7 +70,7 @@ remnote 主题
 - [ctrl/cmd + f](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/filter.css): `filter`， 美化标签，标签移至右边，官方现在排成一排也不折行。
     <img src="https://raw.githubusercontent.com/yoyooyooo/remnote-theme/master/images/filter.png" width="700" alt="filter"/>
 - [修改样式类 tag](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/css-tag.css): `css-tag`，一些加了 tag 才能生效的样式，
-  - `blockquote`：引用，待图标
+  - `blockquote`：引用，带图标
   - `warn`：引用改个颜色
   - `idea`：引用改个颜色
   - `htag`: 当前 rem 所有标签缩成小圆点，hover 展示
