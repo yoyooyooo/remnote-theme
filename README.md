@@ -67,10 +67,10 @@ remnote 主题
 - [引用](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/reference.css): `reference`，双链`[[...]]`美化
 - [收缩时左侧菜单触发区域](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/sidebar.css): `sidebar`，左侧菜单收缩时，触发区域扩大至整个左侧，但隐藏占位空间，也就是触边时自动展开侧边栏。
 - [顶部导航栏](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/topbar.css): `topbar`， 顶部导航栏移植右下角，平时不展示，鼠标移到右下角附近区域时展示前进后退按钮
-- [ctrl/cmd + f](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/filter.css): `filter`， 美化标签，标签移植左边，官方现在排成一排也不这行
-  - <img src="https://raw.githubusercontent.com/yoyooyooo/remnote-theme/master/images/filter.png" width="300" alt="filter"/>
+- [ctrl/cmd + f](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/filter.css): `filter`， 美化标签，标签移至右边，官方现在排成一排也不折行。
+    <img src="https://raw.githubusercontent.com/yoyooyooo/remnote-theme/master/images/filter.png" width="700" alt="filter"/>
 - [修改样式类 tag](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/css-tag.css): `css-tag`，一些加了 tag 才能生效的样式，
-  - `blockquote`：引用，待图标
+  - `blockquote`：引用，带图标
   - `warn`：引用改个颜色
   - `idea`：引用改个颜色
   - `htag`: 当前 rem 所有标签缩成小圆点，hover 展示
