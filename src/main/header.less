@@ -8,6 +8,10 @@
     }
     .rem-bullet__number {
       color: @bgcolor;
+      // numberlist 时，收缩时用文字阴影，背景色和字体色不搭
+      > div:last-child:not(:first-child) {
+        text-shadow: 0 0 3px darken(@bgcolor, 20%);
+      }
     }
     .rem-bullet__container {
       .rem-bullet,
