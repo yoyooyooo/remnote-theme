@@ -46,12 +46,17 @@
     border-left: 5px solid @borderColor;
     padding: 6px 11px !important;
   }
-  .rem[data-rem-tags~="@{tagName}"]
-    > div:first-child
-    .rem-container--compact
-    .rem-text
-    > div {
-    margin: -2.5px 0;
+  .rem[data-rem-tags~="@{tagName}"] {
+    > div:first-child .rem-container--compact .rem-text > div {
+      margin: -2.5px 0;
+    }
+
+    // 加深引用颜色
+    .rem-text .RichTextViewer,
+    .rem-text [data-slate-node="text"] .quote,
+    .rem-reference-container:not([data-rem-tags="emoji"]) .rem-reference-link {
+      mix-blend-mode: multiply;
+    }
   }
 
   .prefixIcon (@url) when not (@url = "") {
