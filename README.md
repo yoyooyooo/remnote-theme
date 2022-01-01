@@ -58,10 +58,10 @@ remnote 主题
 
 为了能让人根据需求自己取想要的，尽可能把作用拆的细了。
 
-- [背景](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/background.css): `window` ，背景美化
+- [背景](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/background.css): `background` ，背景美化
 - [字体](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/font.css): ` font` ，字体美化
-- [标题 h123](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/background.css): `header` ，h123 美化
-- [高亮](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/background.css): `highlight` 自定义高亮
+- [标题 h123](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/header.css): `header` ，h123 美化
+- [高亮](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/highlight.css): `highlight` 自定义高亮
 - [多窗口](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/multiple-window.css): `multiple-window`，优化工具条样式。
 - [普通标签美化](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/tag.css): `tag`，标签美化
 - [引用](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/reference.css): `reference`，双链`[[...]]`美化
