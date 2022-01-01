@@ -16,7 +16,7 @@ remnote 主题
 @import url("https://cdn.jsdelivr.net/gh/yoyooyooo/remnote-theme/dist/main/background.css");
 ```
 
-其中的 `window` 按需求改成对应的主题小分类的名称，参考[参考主题小分类](https://github.com/yoyooyooo/remnote-theme#按需引入的主题小分类)
+其中的 `background` 按需求改成对应的主题小分类的名称，参考[参考主题小分类](https://github.com/yoyooyooo/remnote-theme#按需引入的主题小分类)
 
 ## 手动引入
 
