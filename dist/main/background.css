@@ -1,1 +1,10 @@
-#document,#document-sidebar,.document--narrow,.tile__document,body{background:var(--main-background-colo,#f6f5f0)}#multiple-windows>.split>.gutter{background-color:#e2dfcf}
+#document,
+#document-sidebar,
+.document--narrow,
+.tile__document,
+body {
+  background: var(--main-background-color, #f6f5f0);
+}
+#multiple-windows > .split > .gutter {
+  background-color: #e2dfcf;
+}
