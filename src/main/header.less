@@ -1,4 +1,4 @@
-.header(@h, @bgcolor, @bulletSize, @fontSize) {
+.header(@h, @bgcolor, @bulletSize, @fontSize,@circleWidth) {
   .rem-container--header-@{h} {
     // .rem-bullet,
     // .rem-bullet--in-list {
@@ -18,11 +18,14 @@
       }
     }
     .rem-bullet__container {
-      .perfect-circle__inner {
-        background-color: @bgcolor;
-        border-radius: 50%;
-        svg {
-          color: @bgcolor;
+      .perfect-circle {
+        --perfect-circle-width: @circleWidth;
+        .perfect-circle__inner {
+          background-color: @bgcolor;
+          border-radius: 50%;
+          svg {
+            color: @bgcolor;
+          }
         }
       }
     }
@@ -37,6 +40,6 @@
   }
 }
 
-.header(1, hsl(0, 51%, 54%), 12px, 1.1rem);
-.header(2, hsl(251, 97%, 69%), 10px, 1.05rem);
-.header(3, hsl(81, 80%, 50%), 8px, 1rem);
+.header(1, hsl(0, 51%, 54%), 12px, 1.1rem, 16px);
+.header(2, hsl(251, 97%, 69%), 10px, 1.05rem, 14px);
+.header(3, hsl(81, 80%, 50%), 8px, 1rem, 12px);
