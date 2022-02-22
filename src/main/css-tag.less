@@ -40,7 +40,7 @@
 // =============== 美化标签 ===============
 
 // 引用类样式
-.quoteTag(@tagName, @borderColor, @bgcolor, @iconUrl) {
+.quoteTag(@tagName, @borderColor, @bgcolor, @iconUrl, @isBlock) {
   .rem[data-rem-tags~=~"@{tagName}"] > div:first-child .rem-text > div {
     background-color: @bgcolor;
     border-left: 5px solid @borderColor;
@@ -57,6 +57,10 @@
     .rem-reference-container:not([data-rem-tags="emoji"]) .rem-reference-link {
       mix-blend-mode: multiply;
     }
+  }
+
+  .block (@isBlock) when (@isBlock = true) {
+    display: block;
   }
 
   .prefixIcon (@url) when not (@url = "") {
@@ -76,13 +80,15 @@
       width: 20px;
       height: 16px;
       background: @borderColor;
+      .block(@isBlock);
     }
   }
   .prefixIcon(@iconUrl);
 }
 
-.quoteTag("definition", #ea36a2, #f4cde4, "https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg");
-.quoteTag("blockquote", #6e6e6e, #e8e8e8, "https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg");
-.quoteTag("warn", #f1b13a, #fff8e8, "https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg");
-.quoteTag("idea", #27c208, #e0f2dd, "https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg");
-.quoteTag("summary", #588126, #bfe8b9, "https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg");
+.quoteTag("definition", #ea36a2, #f4cde4, "https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg", false);
+.quoteTag("blockquote", #6e6e6e, #e8e8e8, "https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg", false);
+.quoteTag("quote", #6e6e6e, #e8e8e8, "https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg", true);
+.quoteTag("warn", #f1b13a, #fff8e8, "https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg", false);
+.quoteTag("idea", #27c208, #e0f2dd, "https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg", false);
+.quoteTag("summary", #588126, #bfe8b9, "https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg", false);
