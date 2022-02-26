@@ -1,6 +1,7 @@
 // tag 容器收缩成小圆点，hover 时展示
 .rem[data-rem-tags~="htag"],
 .rem[data-rem-tags="blockquote"],
+.rem[data-rem-tags="cite"],
 .rem[data-rem-tags="warn"],
 .rem[data-rem-tags="idea"],
 .rem[data-rem-tags="definition"],
@@ -62,6 +63,9 @@
   .block (@isBlock) when (@isBlock = true) {
     display: block;
   }
+  .block (@isBlock) when not (@isBlock = true) {
+    float: left;
+  }
 
   .prefixIcon (@url) when not (@url = "") {
     .rem[data-rem-tags~="@{tagName}"]
@@ -70,7 +74,6 @@
       .rem-text
       > div::before {
       content: "";
-      float: left;
       mask-image: url(@url);
       mask-repeat: no-repeat;
       mask-size: contain;
