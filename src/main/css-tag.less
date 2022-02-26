@@ -67,7 +67,7 @@
     float: left;
   }
 
-  .prefixIcon (@url) when not (@url = "") {
+  .prefixIcon (@url) when not (@url = "❝") {
     .rem[data-rem-tags~="@{tagName}"]
       > div:first-child
       .rem-container
@@ -86,12 +86,29 @@
       .block(@isBlock);
     }
   }
+  .prefixIcon (@url) when (@url = "❝") {
+    .rem[data-rem-tags~="@{tagName}"]
+      > div:first-child
+      .rem-container
+      .rem-text
+      > div::before {
+      content: "❝";
+      display: block;
+      font-size: 20px;
+      font-weight: bold;
+      padding-bottom: 4px;
+      position: relative;
+      top: 3px;
+      left: 0px;
+      .block(@isBlock);
+    }
+  }
   .prefixIcon(@iconUrl);
 }
 
 .quoteTag("definition", #ea36a2, #f4cde4, "https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg", false);
 .quoteTag("blockquote", #6e6e6e, #e8e8e8, "https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg", false);
-.quoteTag("cite", #6e6e6e, #e8e8e8, "https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg", true);
+.quoteTag("cite", #6e6e6e, #e8e8e8, "❝", true);
 .quoteTag("warn", #f1b13a, #fff8e8, "https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg", false);
 .quoteTag("idea", #27c208, #e0f2dd, "https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg", false);
 .quoteTag("summary", #588126, #bfe8b9, "https://hannesfrank.github.io/remnote-css-rem-types/assets/concept.svg", false);
