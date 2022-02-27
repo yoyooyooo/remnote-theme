@@ -96,10 +96,24 @@
       display: block;
       font-size: 20px;
       font-weight: bold;
-      padding-bottom: 4px;
       position: relative;
-      top: 3px;
       left: 0px;
+      .block(@isBlock);
+    }
+    .rem[data-rem-tags~="@{tagName}"]
+      > div:first-child
+      .rem-container
+      .rem-text
+      > div::before {
+      content: "❝";
+      display: block;
+      font-size: 20px;
+      font-weight: bold;
+      position: relative;
+      left: 0px;
+      bottom: 0px;
+      transform: scaleX(-1) scaleY(-1);
+      text-align: right;
       .block(@isBlock);
     }
   }
