@@ -194,8 +194,8 @@
   top: -2px;
   white-space: pre;
 }
-.tagbar .hierarchy-editor__tag-bar__tag .rem-is-custom-rem-type,
-.tagbar .hierarchy-editor__tag-bar__tag .RichTextViewer {
+.tagbar .hierarchy-editor__tag-bar__tag .RichTextViewer,
+.tagbar .hierarchy-editor__tag-bar__tag .rem-is-custom-rem-type {
   font-size: 12px;
 }
 .tagbar .hierarchy-editor__tag-bar__tag a {
@@ -258,14 +258,11 @@
   top: -2px;
   white-space: pre;
 }
+.rem .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer,
 .rem
   .hierarchy-editor__tag-bar
   .hierarchy-editor__tag-bar__tag
-  .rem-is-custom-rem-type,
-.rem
-  .hierarchy-editor__tag-bar
-  .hierarchy-editor__tag-bar__tag
-  .RichTextViewer {
+  .rem-is-custom-rem-type {
   font-size: 12px;
 }
 .rem .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag a {
@@ -976,11 +973,11 @@ body {
 #hierarchy-editor__ctrl-f
   .hierarchy-editor__tag-bar
   .hierarchy-editor__tag-bar__tag
-  .rem-is-custom-rem-type,
+  .RichTextViewer,
 #hierarchy-editor__ctrl-f
   .hierarchy-editor__tag-bar
   .hierarchy-editor__tag-bar__tag
-  .RichTextViewer {
+  .rem-is-custom-rem-type {
   font-size: 12px;
 }
 #hierarchy-editor__ctrl-f
