@@ -20,3 +20,7 @@
   margin-left: 1em;
   padding: 2px 4px;
 }
+.portal-tree-node-box.portal-tree-node-box--enable-buttons
+  > .tree-node-container:not(:last-child) {
+  border-bottom: 1px solid #9db9f8;
+}
