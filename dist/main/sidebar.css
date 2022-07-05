@@ -1,1 +1,1 @@
-#content{position:relative}#content [data-place=bottom]{height:100vh;left:0;opacity:0;overflow:hidden;position:absolute;top:0;width:10px}
+#main #content{position:relative}#main #content [data-place=bottom]{height:100vh;left:0;opacity:0;overflow:hidden;position:absolute;top:0;width:20px;z-index:9999}#main #content>.w-\[40px\]{width:0}
