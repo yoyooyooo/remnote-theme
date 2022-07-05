@@ -22,17 +22,13 @@
 
 #content {
   position: relative;
-  .document-sidebar--collapsed--vertical {
-    .siderbar();
+  [data-place="bottom"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 100vh;
+    overflow: hidden;
+    opacity: 0;
   }
-  @media (min-width: 480px) {
-    .document-sidebar--collapsed--horizontal {
-      .siderbar();
-    }
-  }
-}
-
-#document-sidebar .accordion > div:first-child > div {
-  color: #000;
-  background-color: #f5e4d0;
 }
