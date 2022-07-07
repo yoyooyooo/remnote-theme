@@ -22,17 +22,17 @@
 
 #main #content {
   position: relative;
-  [data-place="bottom"] {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 20px;
-    height: 100vh;
-    overflow: hidden;
-    opacity: 0;
-    z-index: 9999;
-  }
   > .w-\[40px\]:nth-of-type(1) {
     width: 0px;
+    > [data-place="bottom"] {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 20px;
+      height: 100vh;
+      overflow: hidden;
+      opacity: 0;
+      z-index: 9999;
+    }
   }
 }
