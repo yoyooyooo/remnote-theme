@@ -1,10 +1,18 @@
 #main #content {
-  > .w-\[40px\]:nth-of-type(1) {
+  > .w-\[40px\] {
     display: contents;
     > [data-place="bottom"] {
       z-index: 1;
       position: absolute;
       bottom: 0;
+    }
+  }
+  > .w-\[40px\] {
+    &:nth-of-type(1) > [data-place="bottom"] {
+      left: 0;
+    }
+    &:nth-of-type(2) > [data-place="bottom"] {
+      right: 0;
     }
   }
 }
