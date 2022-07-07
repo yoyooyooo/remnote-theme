@@ -1,1 +1,1 @@
-#main #content{position:relative}#main #content>.w-\[40px\]:first-of-type{width:0}#main #content>.w-\[40px\]:first-of-type>[data-place=bottom]{height:100vh;left:0;opacity:0;overflow:hidden;position:absolute;top:0;width:20px;z-index:9999}
+#main #content>.w-\[40px\]:first-of-type{display:contents}#main #content>.w-\[40px\]:first-of-type>[data-place=bottom]{bottom:0;position:absolute;z-index:1}
