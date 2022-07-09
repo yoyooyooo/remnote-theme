@@ -1,6 +1,6 @@
 @media (min-width: 600px) {
   #main #content {
-    > div:first-child {
+    > .flex.flex-shrink-0.fade-on-hide-ui.text-gray-40.h-full.left-0 {
       width: 0;
       > [data-place="bottom"] {
         z-index: 1;
@@ -12,10 +12,19 @@
         left: 0;
       }
     }
+
+    > .flex.flex-shrink-0.fade-on-hide-ui.text-gray-40.h-full.left-0
+      + .content__page
+      + .flex.flex-shrink-0.fade-on-hide-ui.text-gray-40.h-full.left-0
+      > [data-place="bottom"] {
+      right: 0;
+    }
   }
+
   #document-sidebar [data-type="document_list_item"] {
     padding-left: 30px;
   }
+
   #main #content .document-sidebar--floating {
     z-index: 77 !important;
   }
