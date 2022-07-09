@@ -1,23 +1,25 @@
-// 块引用
-.rem-reference-container:not([data-rem-tags="emoji"]) {
-  .rem-reference {
-    background-color: rgba(208, 207, 207, 0.3);
-    border-bottom: 1px dashed #bbb;
-    color: unset;
-    // display: inline-flex;
+@media (min-width: 600px) {
+  // 块引用
+  .rem-reference-container:not([data-rem-tags="emoji"]) {
+    .rem-reference {
+      background-color: rgba(208, 207, 207, 0.3);
+      border-bottom: 1px dashed #bbb;
+      color: unset;
+      // display: inline-flex;
+    }
   }
-}
 
-// 禁止跳转: 块引用内的链接、面包屑内的链接、底部 references 的面包屑内的链接
-.rem-reference > span > .RichTextViewer > a,
-.document-header-top-bar a {
-  pointer-events: none;
-}
+  // 禁止跳转: 块引用内的链接、面包屑内的链接、底部 references 的面包屑内的链接
+  .rem-reference > span > .RichTextViewer > a,
+  .document-header-top-bar a {
+    pointer-events: none;
+  }
 
-/* // 有公式的时候居中
+  /* // 有公式的时候居中
 .RichTextViewer,
 .EditorContainer > div[data-slate-node="element"] {
   display: inline-flex;
   align-items: center;
 }
  */
+}

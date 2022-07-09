@@ -1,12 +1,14 @@
-#document,
-#document-sidebar,
-.tile__document,
-body,
-.document--narrow {
-  background: var(--main-background-color, #f6f5f0);
-}
+@media (min-width: 600px) {
+  #document,
+  #document-sidebar,
+  .tile__document,
+  body,
+  .document--narrow {
+    background: var(--main-background-color, #f6f5f0);
+  }
 
-// 左右分栏模式间隙
-#multiple-windows > .split > .gutter {
-  background-color: hsl(50deg 25% 85%);
+  // 左右分栏模式间隙
+  #multiple-windows > .split > .gutter {
+    background-color: hsl(50deg 25% 85%);
+  }
 }
