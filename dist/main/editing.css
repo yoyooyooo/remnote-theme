@@ -1,1 +1,1 @@
-@media (min-width:600px){.rem .rem-text:focus-within{border:3px dashed orange;box-sizing:border-box}}
+@media (min-width:600px){.rem .rem-text:focus-within{outline:3px dashed orange}}
