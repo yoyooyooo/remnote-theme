@@ -10,6 +10,7 @@
 
       &:nth-of-type(1) > [data-place="bottom"] {
         left: 0;
+        z-index: 1;
       }
     }
 
@@ -18,14 +19,11 @@
       + .flex.flex-shrink-0.fade-on-hide-ui.text-gray-40.h-full.left-0
       > [data-place="bottom"] {
       right: 0;
+      z-index: 1;
     }
   }
 
   #document-sidebar [data-type="document_list_item"] {
     padding-left: 30px;
-  }
-
-  #main #content .document-sidebar--floating {
-    z-index: 77 !important;
   }
 }
