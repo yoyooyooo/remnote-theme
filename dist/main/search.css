@@ -1,1 +1,1 @@
-[aria-label=Omnibar]{min-width:1000px!important}[aria-label=Omnibar] #code-node{font-size:10px!important}
+@media (min-width:600px){[aria-label=Omnibar]{min-width:1000px!important}[aria-label=Omnibar] #code-node{font-size:10px!important}}
