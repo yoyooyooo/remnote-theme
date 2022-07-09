@@ -1,6 +1,6 @@
 @media (min-width: 600px) {
   #main #content {
-    > .w-\[40px\] {
+    > div:first-child {
       width: 0;
       > [data-place="bottom"] {
         z-index: 1;
@@ -12,13 +12,11 @@
         left: 0;
       }
     }
-
-    > .w-\[40px\] + .content__page + .w-\[40px\] > [data-place="bottom"] {
-      right: 0;
-    }
   }
-
   #document-sidebar [data-type="document_list_item"] {
     padding-left: 30px;
+  }
+  #main #content .document-sidebar--floating {
+    z-index: 77 !important;
   }
 }
