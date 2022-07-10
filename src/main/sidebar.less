@@ -5,21 +5,18 @@
       > [data-place="bottom"] {
         z-index: 1;
         position: absolute;
+        left: 0;
         bottom: 0;
       }
-
-      &:nth-of-type(1) > [data-place="bottom"] {
-        left: 0;
-        z-index: 1;
-      }
     }
-
-    > .flex.flex-shrink-0.fade-on-hide-ui.text-gray-40.h-full.left-0
-      + .content__page
-      + .flex.flex-shrink-0.fade-on-hide-ui.text-gray-40.h-full.left-0
+    > .flex.flex-shrink-0.fade-on-hide-ui.text-gray-40.h-full.right-0 {
+      width: 0;
       > [data-place="bottom"] {
-      right: 0;
-      z-index: 1;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
     }
   }
 
