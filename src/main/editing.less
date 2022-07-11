@@ -36,56 +36,53 @@
 
 @media (min-width: 600px) {
   /* 当前焦点rem高亮外边框 */
-  @keyframes ants {
-    100% {
-      background-position: 100%;
-    }
-  }
-
-  // .rem-container:hover .rem-text::before {
-  //   --focus-rem-dashed-color: rgba(255, 166, 0, 0.7);
-  //   border-width: 1px;
-  //   animation: none !important;
+  // @keyframes ants {
+  //   100% {
+  //     background-position: 100%;
+  //   }
   // }
-  .rem-container:focus-within/* ,
-  .rem-container:hover  */ {
-    .rem-button__container {
-      z-index: 2;
-    }
-    .rem-text {
-      &::before {
-        content: "";
-        box-sizing: border-box;
-        display: block;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        border: 3px solid transparent;
-        border-radius: 5px;
-        background: linear-gradient(
-              var(--focus-rem-bg-color),
-              var(--focus-rem-bg-color)
-            )
-            padding-box,
-          repeating-linear-gradient(
-              -45deg,
-              var(--focus-rem-dashed-color) 0,
-              var(--focus-rem-dashed-color) 25%,
-              var(--focus-rem-bg-color) 0,
-              var(--focus-rem-bg-color) 50%
-            )
-            0/1em 1em;
-        animation: ants 30s linear infinite;
-        pointer-events: none;
-        z-index: 1;
-      }
-      > div {
-        z-index: 2;
-      }
-    }
-  }
+
+  // // .rem-container:hover .rem-text::before {
+  // //   --focus-rem-dashed-color: rgba(255, 166, 0, 0.7);
+  // //   border-width: 1px;
+  // //   animation: none !important;
+  // // }
+  // .rem-container:focus-within/* ,
+  // .rem-container:hover  */ {
+  //   .rem-button__container {
+  //     z-index: 2;
+  //   }
+  //   .rem-text {
+  //     &::before {
+  //       content: "";
+  //       box-sizing: border-box;
+  //       display: block;
+  //       position: absolute;
+  //       left: 0;
+  //       right: 0;
+  //       top: 0;
+  //       bottom: 0;
+  //       border: 3px solid transparent;
+  //       border-radius: 5px;
+  //       background: linear-gradient(var(--focus-rem-bg-color), var(--focus-rem-bg-color))
+  //           padding-box,
+  //         repeating-linear-gradient(
+  //             -45deg,
+  //             var(--focus-rem-dashed-color) 0,
+  //             var(--focus-rem-dashed-color) 25%,
+  //             var(--focus-rem-bg-color) 0,
+  //             var(--focus-rem-bg-color) 50%
+  //           )
+  //           0/1em 1em;
+  //       animation: ants 30s linear infinite;
+  //       pointer-events: none;
+  //       z-index: 1;
+  //     }
+  //     > div {
+  //       z-index: 2;
+  //     }
+  //   }
+  // }
 
   // 小圆点
   .rem-container:focus-within {

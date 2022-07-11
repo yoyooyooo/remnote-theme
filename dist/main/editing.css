@@ -15,51 +15,6 @@
   }
 }
 @media (min-width: 600px) {
-  @-webkit-keyframes ants {
-    to {
-      background-position: 100%;
-    }
-  }
-  @keyframes ants {
-    to {
-      background-position: 100%;
-    }
-  }
-  .rem-container:focus-within .rem-button__container {
-    z-index: 2;
-  }
-  .rem-container:focus-within .rem-text:before {
-    -webkit-animation: ants 30s linear infinite;
-    animation: ants 30s linear infinite;
-    background: linear-gradient(
-          var(--focus-rem-bg-color),
-          var(--focus-rem-bg-color)
-        )
-        padding-box,
-      repeating-linear-gradient(
-          -45deg,
-          var(--focus-rem-dashed-color) 0,
-          var(--focus-rem-dashed-color) 25%,
-          var(--focus-rem-bg-color) 0,
-          var(--focus-rem-bg-color) 50%
-        )
-        0/1em 1em;
-    border: 3px solid transparent;
-    border-radius: 5px;
-    bottom: 0;
-    box-sizing: border-box;
-    content: "";
-    display: block;
-    left: 0;
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1;
-  }
-  .rem-container:focus-within .rem-text > div {
-    z-index: 2;
-  }
   .rem-container:focus-within .plus-button {
     position: relative;
   }
