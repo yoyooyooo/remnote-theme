@@ -19,6 +19,9 @@
       .perfect-circle {
         --perfect-circle-width: @circleWidth !important;
         .perfect-circle__inner {
+          &::before {
+            background: @coreColor;
+          }
           .rem-bullet__core {
             color: @coreColor;
           }
