@@ -1,12 +1,1 @@
-@media (min-width: 600px) {
-  #document,
-  #document-sidebar,
-  .document--narrow,
-  .tile__document,
-  body {
-    background: var(--main-background-color);
-  }
-  #multiple-windows > .split > .gutter {
-    background-color: #e2dfcf;
-  }
-}
+@media (min-width:600px){#document,#document-sidebar,.document--narrow,.tile__document,body{background:var(--main-background-color)}#multiple-windows>.split>.gutter{background-color:#e2dfcf}}
