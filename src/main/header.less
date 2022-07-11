@@ -1,45 +1,36 @@
-.header(@h, @bgcolor, @bulletSize, @fontSize, @circleWidth) {
+.header(@h, @coreColor, @ringColor, @fontSize, @circleWidth) {
   .rem-container--header-@{h} {
-    // .rem-bullet,
-    // .rem-bullet--in-list {
-    //   width: @bulletSize;
-    //   height: @bulletSize;
-    //   // border-radius: 50%;
-    //   border-color: lighten(@bgcolor, 20%);
-    // }
     .rem-bullet__number {
-      color: @bgcolor;
-      // numberlist 时，收缩时用文字阴影，背景色和字体色不搭
+      font-size: @fontSize;
+      color: @coreColor;
+      // number list 时，收缩时用文字阴影，背景色和字体色不搭
       > div:first-child:not(:last-child) {
         background-color: unset;
       }
       > div:last-child:not(:first-child) {
-        text-shadow: 0 0 2px darken(@bgcolor, 100%);
+        text-shadow: 0 0 2px darken(@coreColor, 100%);
       }
     }
     .rem-bullet__container {
+      .rn-rem-bullet--hidden-children .rem-bullet__ring {
+        fill: @ringColor;
+      }
+
       .perfect-circle {
-        --perfect-circle-width: @circleWidth;
+        --perfect-circle-width: @circleWidth !important;
         .perfect-circle__inner {
-          background-color: @bgcolor;
-          border-radius: 50%;
-          svg {
-            color: @bgcolor;
+          .rem-bullet__core {
+            color: @coreColor;
           }
         }
       }
     }
     .rem-text.rem-header--@{h} {
-      // --perfect-circle-width: 12px;
-      // --perfect-circle-scale: 10;
       font-size: @fontSize;
-      // .rem-bullet__number .rounded-full {
-      //   margin-top: ~"calc(@{fontSize} - 0.75rem)";
-      // }
     }
   }
 }
 
-.header(1, hsl(0, 51%, 54%), 12px, 1.1rem, 16px);
-.header(2, hsl(251, 97%, 69%), 10px, 1.05rem, 14px);
-.header(3, hsl(81, 80%, 50%), 8px, 1rem, 12px);
+.header(1, hsl(0, 51%, 54%), hsl(0, 41%, 80%), 1.1rem, 24px);
+.header(2, hsl(251, 97%, 69%), hsl(251, 77%, 88%),1.05rem, 20px);
+.header(3, hsl(81, 80%, 50%), hsl(81, 60%, 85%), 1rem, 16px);

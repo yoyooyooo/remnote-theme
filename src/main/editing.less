@@ -1,5 +1,110 @@
+@keyframes spin {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+// 修改 bullet
+.bullet(@image, @bgcolor) {
+  .rem-bullet {
+    .perfect-circle__inner {
+      svg {
+        display: none;
+      }
+      &::before {
+        --p-size: calc(24px * var(--scale));
+        content: "";
+        mask-repeat: no-repeat;
+        mask-image: @image;
+        mask-position: center;
+        mask-size: var(--p-size) var(--p-size);
+        display: block;
+        height: calc(var(--p-size));
+        width: calc(var(--p-size));
+        background: @bgcolor;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
 @media (min-width: 600px) {
-  .rem .rem-text:focus-within {
-    outline: 3px dashed orange;
+  /* 当前焦点rem高亮外边框 */
+  @keyframes ants {
+    100% {
+      background-position: 100%;
+    }
+  }
+
+  // .rem-container:hover .rem-text::before {
+  //   --focus-rem-dashed-color: rgba(255, 166, 0, 0.7);
+  //   border-width: 1px;
+  //   animation: none !important;
+  // }
+  .rem-container:focus-within/* ,
+  .rem-container:hover  */ {
+    .rem-button__container {
+      z-index: 2;
+    }
+    .rem-text {
+      &::before {
+        content: "";
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border: 3px solid transparent;
+        background: linear-gradient(
+              var(--focus-rem-bg-color),
+              var(--focus-rem-bg-color)
+            )
+            padding-box,
+          repeating-linear-gradient(
+              -45deg,
+              var(--focus-rem-dashed-color) 0,
+              var(--focus-rem-dashed-color) 25%,
+              var(--focus-rem-bg-color) 0,
+              var(--focus-rem-bg-color) 50%
+            )
+            0/1em 1em;
+        animation: ants 30s linear infinite;
+        pointer-events: none;
+        z-index: 1;
+      }
+      > div {
+        z-index: 2;
+      }
+    }
+  }
+
+  // 小圆点
+  .rem-container:focus-within {
+    .plus-button {
+      position: relative;
+    }
+    .rem-bullet {
+      animation: spin linear 5s infinite;
+    }
+
+    --icon: url("data:image/svg+xml,%3Csvg style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M15 13.1c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3M9 2v1a2 2 0 0 0 2 2v4.1c.32-.06.66-.1 1-.1s.68.04 1 .1V5c1.11 0 2-.89 2-2V2H9m-5 9.1c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3m16 0c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3m0 7c-.68 0-1.33-.14-1.92-.39-.48.24-1.01.39-1.58.39-1.11 0-2.09-.53-2.73-1.33-.55.23-1.14.33-1.77.33s-1.22-.1-1.77-.33c-.64.8-1.62 1.33-2.73 1.33-.57 0-1.1-.15-1.58-.39-.59.25-1.24.39-1.92.39-.27 0-.54-.04-.8-.1a5.436 5.436 0 0 0 4.3 2.1c1.33 0 2.55-.47 3.5-1.26v2.26c0 .55.45 1 1 1s1-.45 1-1v-2.26c.95.79 2.17 1.26 3.5 1.26 1.74 0 3.29-.81 4.3-2.1-.26.06-.53.1-.8.1z'/%3E%3C/svg%3E");
+
+    // .bullet("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2022/07/09/drag.svg", var(--focus-rem-bullet-color));
+    .bullet(url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2022/07/11/chandelier.svg"), var(--focus-rem-bullet-color));
+
+    // rem 折叠时
+    .rem-bullet--hidden-children {
+    }
+    // rem 展开时
+    .rem-bullet--all-children-visible {
+    }
   }
 }

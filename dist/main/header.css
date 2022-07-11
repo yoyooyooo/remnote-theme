@@ -1,1 +1,99 @@
-.rem-container--header-1 .rem-bullet__number{color:#c64e4e}.rem-container--header-1 .rem-bullet__number>div:first-child:not(:last-child){background-color:unset}.rem-container--header-1 .rem-bullet__number>div:last-child:not(:first-child){text-shadow:0 0 2px #000}.rem-container--header-1 .rem-bullet__container .perfect-circle{--perfect-circle-width:16px}.rem-container--header-1 .rem-bullet__container .perfect-circle .perfect-circle__inner{background-color:#c64e4e;border-radius:50%}.rem-container--header-1 .rem-bullet__container .perfect-circle .perfect-circle__inner svg{color:#c64e4e}.rem-container--header-1 .rem-text.rem-header--1{font-size:1.1rem}.rem-container--header-2 .rem-bullet__number{color:#7f63fd}.rem-container--header-2 .rem-bullet__number>div:first-child:not(:last-child){background-color:unset}.rem-container--header-2 .rem-bullet__number>div:last-child:not(:first-child){text-shadow:0 0 2px #000}.rem-container--header-2 .rem-bullet__container .perfect-circle{--perfect-circle-width:14px}.rem-container--header-2 .rem-bullet__container .perfect-circle .perfect-circle__inner{background-color:#7f63fd;border-radius:50%}.rem-container--header-2 .rem-bullet__container .perfect-circle .perfect-circle__inner svg{color:#7f63fd}.rem-container--header-2 .rem-text.rem-header--2{font-size:1.05rem}.rem-container--header-3 .rem-bullet__number{color:#9ee61a}.rem-container--header-3 .rem-bullet__number>div:first-child:not(:last-child){background-color:unset}.rem-container--header-3 .rem-bullet__number>div:last-child:not(:first-child){text-shadow:0 0 2px #000}.rem-container--header-3 .rem-bullet__container .perfect-circle{--perfect-circle-width:12px}.rem-container--header-3 .rem-bullet__container .perfect-circle .perfect-circle__inner{background-color:#9ee61a;border-radius:50%}.rem-container--header-3 .rem-bullet__container .perfect-circle .perfect-circle__inner svg{color:#9ee61a}.rem-container--header-3 .rem-text.rem-header--3{font-size:1rem}
+.rem-container--header-1 .rem-bullet__number {
+  color: #c64e4e;
+  font-size: 1.1rem;
+}
+.rem-container--header-1
+  .rem-bullet__number
+  > div:first-child:not(:last-child) {
+  background-color: unset;
+}
+.rem-container--header-1
+  .rem-bullet__number
+  > div:last-child:not(:first-child) {
+  text-shadow: 0 0 2px #000;
+}
+.rem-container--header-1
+  .rem-bullet__container
+  .rn-rem-bullet--hidden-children
+  .rem-bullet__ring {
+  fill: #e1b7b7;
+}
+.rem-container--header-1 .rem-bullet__container .perfect-circle {
+  --perfect-circle-width: 24px !important;
+}
+.rem-container--header-1
+  .rem-bullet__container
+  .perfect-circle
+  .perfect-circle__inner
+  .rem-bullet__core {
+  color: #c64e4e;
+}
+.rem-container--header-1 .rem-text.rem-header--1 {
+  font-size: 1.1rem;
+}
+.rem-container--header-2 .rem-bullet__number {
+  color: #7f63fd;
+  font-size: 1.05rem;
+}
+.rem-container--header-2
+  .rem-bullet__number
+  > div:first-child:not(:last-child) {
+  background-color: unset;
+}
+.rem-container--header-2
+  .rem-bullet__number
+  > div:last-child:not(:first-child) {
+  text-shadow: 0 0 2px #000;
+}
+.rem-container--header-2
+  .rem-bullet__container
+  .rn-rem-bullet--hidden-children
+  .rem-bullet__ring {
+  fill: #d1c9f8;
+}
+.rem-container--header-2 .rem-bullet__container .perfect-circle {
+  --perfect-circle-width: 20px !important;
+}
+.rem-container--header-2
+  .rem-bullet__container
+  .perfect-circle
+  .perfect-circle__inner
+  .rem-bullet__core {
+  color: #7f63fd;
+}
+.rem-container--header-2 .rem-text.rem-header--2 {
+  font-size: 1.05rem;
+}
+.rem-container--header-3 .rem-bullet__number {
+  color: #9ee61a;
+  font-size: 1rem;
+}
+.rem-container--header-3
+  .rem-bullet__number
+  > div:first-child:not(:last-child) {
+  background-color: unset;
+}
+.rem-container--header-3
+  .rem-bullet__number
+  > div:last-child:not(:first-child) {
+  text-shadow: 0 0 2px #000;
+}
+.rem-container--header-3
+  .rem-bullet__container
+  .rn-rem-bullet--hidden-children
+  .rem-bullet__ring {
+  fill: #e0f0c2;
+}
+.rem-container--header-3 .rem-bullet__container .perfect-circle {
+  --perfect-circle-width: 16px !important;
+}
+.rem-container--header-3
+  .rem-bullet__container
+  .perfect-circle
+  .perfect-circle__inner
+  .rem-bullet__core {
+  color: #9ee61a;
+}
+.rem-container--header-3 .rem-text.rem-header--3 {
+  font-size: 1rem;
+}

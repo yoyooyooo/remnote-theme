@@ -28,10 +28,12 @@ remnote 主题
 
 ```css
 :root {
-  /* 主背景色 */
-  --main-background-color: #f6f5f0;
-  /* 主字体色 */
-  --main-font-color: #555;
+  --main-background-color: #f6f5f0; // 主背景色
+  --main-font-color: #555; // 主字体色
+  --focus-rem-bg-color: var(
+    --main-background-color
+  ); // 当前激活rem背景色, 默认为主背景色
+  --focus-rem-dashed-color: orange; // 当前激活rem虚线边框颜色
 
   /* 高亮 */
   --highlight-text-color-red: #000;
