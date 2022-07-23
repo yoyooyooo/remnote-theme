@@ -1,57 +1,59 @@
-@media (min-width: 600px) {
-  // 面包屑
-  .document-header-top-bar {
-    .parent-link + span > svg {
-      position: relative;
-      top: 3px;
+body:not(.dark) {
+  @media (min-width: 600px) {
+    // 面包屑
+    .document-header-top-bar {
+      .parent-link + span > svg {
+        position: relative;
+        top: 3px;
+      }
     }
-  }
 
-  // 链接下划线
-  .rem a {
-    text-underline-position: under;
-    color: #3434cf;
-    text-decoration-color: #6a6adf;
-  }
-  // 块引用内链接去掉下划线
-  .rem-reference-link a {
-    text-decoration: none;
-  }
-
-  // 左边栏字体色
-  body,
-  #document,
-  .tile__document,
-  #document-sidebar {
-    color: var(--main-font-color, #555);
-  }
-
-  // 被引用部分面包屑第一项字体
-  #hierarchy-editor
-    > div:nth-child(2)
-    > div
-    > div:nth-child(2)
-    > div
-    > .portal-tree-node-box {
-    .rem .rem-container .rem-text > .EditorContainer {
-      color: #414141;
-      font-weight: 700;
-      // background-color: hsl(308deg 98% 85%);
-      border-radius: 10px;
+    // 链接下划线
+    .rem a {
+      text-underline-position: under;
+      color: #3434cf;
+      text-decoration-color: #6a6adf;
     }
-    .TreeNode .rem-text > .EditorContainer {
-      color: var(--main-font-color, #555) !important;
-      font-weight: unset !important;
-      background-color: unset !important;
-      border-radius: 0px !important;
+    // 块引用内链接去掉下划线
+    .rem-reference-link a {
+      text-decoration: none;
     }
-    .RichTextViewer a {
-      pointer-events: none;
-    }
-  }
 
-  // 标题隐藏外联 favicon
-  #DocumentTitle a img {
-    display: none;
+    // 左边栏字体色
+    body,
+    #document,
+    .tile__document,
+    #document-sidebar {
+      color: var(--main-font-color, #555);
+    }
+
+    // 被引用部分面包屑第一项字体
+    #hierarchy-editor
+      > div:nth-child(2)
+      > div
+      > div:nth-child(2)
+      > div
+      > .portal-tree-node-box {
+      .rem .rem-container .rem-text > .EditorContainer {
+        color: #414141;
+        font-weight: 700;
+        // background-color: hsl(308deg 98% 85%);
+        border-radius: 10px;
+      }
+      .TreeNode .rem-text > .EditorContainer {
+        color: var(--main-font-color, #555) !important;
+        font-weight: unset !important;
+        background-color: unset !important;
+        border-radius: 0px !important;
+      }
+      .RichTextViewer a {
+        pointer-events: none;
+      }
+    }
+
+    // 标题隐藏外联 favicon
+    #DocumentTitle a img {
+      display: none;
+    }
   }
 }
