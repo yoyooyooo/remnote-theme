@@ -1,13 +1,1 @@
-@media (min-width: 600px) {
-  body.light
-    .rem-reference-container:not([data-rem-tags="emoji"])
-    .rem-reference {
-    background-color: hsla(0, 1%, 81%, 0.3);
-    border-bottom: 1px dashed #bbb;
-    color: unset;
-  }
-  body.light .document-header-top-bar a,
-  body.light .rem-reference > span > .RichTextViewer > a {
-    pointer-events: none;
-  }
-}
+@media (min-width:600px){body.light .rem-reference-container:not([data-rem-tags=emoji]) .rem-reference{background-color:hsla(0,1%,81%,.3);border-bottom:1px dashed #bbb;color:unset}body.light .document-header-top-bar a,body.light .rem-reference>span>.RichTextViewer>a{pointer-events:none}}
