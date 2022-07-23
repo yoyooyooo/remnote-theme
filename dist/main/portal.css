@@ -1,1 +1,40 @@
-@media (min-width:600px){body:not(.dark) #hierarchy-editor .tree-node--parent .py-4,body:not(.dark) .rem-container--embedded-search-stub .py-4{padding:0}body:not(.dark) #hierarchy-editor .tree-node--parent>.rn-clr-background-primary,body:not(.dark) .rem-container--embedded-search-stub>.rn-clr-background-primary{background-color:#d87a9c;padding:4px 10px}body:not(.dark) #hierarchy-editor .tree-node--parent>.rn-clr-background-primary>.rn-divider,body:not(.dark) .rem-container--embedded-search-stub>.rn-clr-background-primary>.rn-divider{display:none}body:not(.dark) #hierarchy-editor .tree-node--parent [data-cy=ref_num],body:not(.dark) .rem-container--embedded-search-stub [data-cy=ref_num]{background:#ff63b9;border-radius:4px;box-shadow:0 0 10px -3px #f63030,1px 1px 6px -2px #f63030;color:#eeecee;margin-left:1em;padding:2px 4px}body:not(.dark) .portal-tree-node-box.portal-tree-node-box--enable-buttons>.tree-node-container:not(:last-child){border-bottom:1px solid #9db9f8}body:not(.dark) #hierarchy-editor .rem-container--not-included-in-document-scope{background-color:#92be84;color:unset}}
+@media (min-width: 600px) {
+  body.light #hierarchy-editor .tree-node--parent .py-4,
+  body.light .rem-container--embedded-search-stub .py-4 {
+    padding: 0;
+  }
+  body.light #hierarchy-editor .tree-node--parent > .rn-clr-background-primary,
+  body.light .rem-container--embedded-search-stub > .rn-clr-background-primary {
+    background-color: #d87a9c;
+    padding: 4px 10px;
+  }
+  body.light
+    #hierarchy-editor
+    .tree-node--parent
+    > .rn-clr-background-primary
+    > .rn-divider,
+  body.light
+    .rem-container--embedded-search-stub
+    > .rn-clr-background-primary
+    > .rn-divider {
+    display: none;
+  }
+  body.light #hierarchy-editor .tree-node--parent [data-cy="ref_num"],
+  body.light .rem-container--embedded-search-stub [data-cy="ref_num"] {
+    background: #ff63b9;
+    border-radius: 4px;
+    box-shadow: 0 0 10px -3px #f63030, 1px 1px 6px -2px #f63030;
+    color: #eeecee;
+    margin-left: 1em;
+    padding: 2px 4px;
+  }
+  body.light
+    .portal-tree-node-box.portal-tree-node-box--enable-buttons
+    > .tree-node-container:not(:last-child) {
+    border-bottom: 1px solid #9db9f8;
+  }
+  body.light #hierarchy-editor .rem-container--not-included-in-document-scope {
+    background-color: #92be84;
+    color: unset;
+  }
+}

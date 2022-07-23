@@ -1,1 +1,20 @@
-:root{--main-background-color:#f6f5f0;--main-font-color:#555;--focus-rem-bg-color:var(--main-background-color);--focus-rem-dashed-color:orange;--focus-rem-bullet-color:orange;--highlight-text-color-red:#000;--highlight-background-color-red:rgba(255,0,0,.22);--highlight-text-color-orange:#000;--highlight-background-color-orange:rgba(244,167,98,.45);--highlight-text-color-yellow:#000;--highlight-background-color-yellow:hsla(52,93%,73%,.45);--highlight-text-color-green:#000;--highlight-background-color-green:rgba(112,230,109,.45);--highlight-text-color-blue:#000;--highlight-background-color-blue:#ddd;--highlight-text-color-purple:#000;--highlight-background-color-purple:rgba(162,102,232,.45)}
+:root {
+  --rn-clr-background-primary: #f6f5f0 !important;
+  --main-background-color: var(--rn-clr-background-primary);
+  --main-font-color: #555;
+  --focus-rem-bg-color: var(--main-background-color);
+  --focus-rem-dashed-color: orange;
+  --focus-rem-bullet-color: orange;
+  --highlight-text-color-red: #000;
+  --highlight-background-color-red: rgba(255, 0, 0, 0.22);
+  --highlight-text-color-orange: #000;
+  --highlight-background-color-orange: rgba(244, 167, 98, 0.45);
+  --highlight-text-color-yellow: #000;
+  --highlight-background-color-yellow: hsla(52, 93%, 73%, 0.45);
+  --highlight-text-color-green: #000;
+  --highlight-background-color-green: rgba(112, 230, 109, 0.45);
+  --highlight-text-color-blue: #000;
+  --highlight-background-color-blue: #ddd;
+  --highlight-text-color-purple: #000;
+  --highlight-background-color-purple: rgba(162, 102, 232, 0.45);
+}
