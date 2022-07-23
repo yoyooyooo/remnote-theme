@@ -1,1 +1,1 @@
-@media (min-width:600px){.rem-reference-container:not([data-rem-tags=emoji]) .rem-reference{background-color:hsla(0,1%,81%,.3);border-bottom:1px dashed #bbb;color:unset}.document-header-top-bar a,.rem-reference>span>.RichTextViewer>a{pointer-events:none}}
+@media (min-width:600px){body:not(.dark) .rem-reference-container:not([data-rem-tags=emoji]) .rem-reference{background-color:hsla(0,1%,81%,.3);border-bottom:1px dashed #bbb;color:unset}body:not(.dark) .document-header-top-bar a,body:not(.dark) .rem-reference>span>.RichTextViewer>a{pointer-events:none}}
