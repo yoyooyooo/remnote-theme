@@ -64,7 +64,6 @@ remnote 主题
 - [字体](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/font.css): ` font` ，字体美化
 - [标题 h123](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/header.css): `header` ，h123 美化
 - [高亮](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/highlight.css): `highlight` 自定义高亮
-- [多窗口](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/multiple-window.css): `multiple-window`，优化工具条样式。
 - [普通标签美化](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/tag.css): `tag`，标签美化
 - [引用](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/reference.css): `reference`，双链`[[...]]`美化
 - [收缩时左侧菜单触发区域](https://github.com/yoyooyooo/remnote-theme/blob/master/dist/main/sidebar.css): `sidebar`，左侧菜单收缩时，触发区域扩大至整个左侧，但隐藏占位空间，也就是触边时自动展开侧边栏。
