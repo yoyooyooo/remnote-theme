@@ -1,5 +1,8 @@
 .header(@h, @coreColor, @ringColor, @fontSize, @circleWidth) {
   .rem-container--header-@{h} {
+    --perfect-circle-width: @circleWidth !important;
+    --yoyo-perfect-circle-width: @circleWidth !important;
+
     .rem-bullet__number {
       font-size: @fontSize;
       color: @coreColor;
@@ -17,10 +20,9 @@
       }
 
       .perfect-circle {
-        --perfect-circle-width: @circleWidth !important;
         .perfect-circle__inner {
           &::before {
-            background: @coreColor !important; // 配合当前激活rem的小圆点自定义svg的颜色
+            background: @coreColor; // 配合当前激活rem的小圆点自定义svg的颜色
           }
           .rem-bullet__core {
             color: @coreColor;

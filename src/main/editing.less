@@ -10,12 +10,36 @@
 // 修改 bullet
 .bullet(@image, @bgcolor) {
   .rem-bullet {
+    --bullet-size: var(--yoyo-perfect-circle-width, 14px);
+    --perfect-circle-width: max(20px, var(--bullet-size));
+
+    // 收缩起来的时候设置颜色
+    &.rem-bullet--hidden-children {
+      .perfect-circle__inner {
+        &::before {
+          background: #fff !important;
+        }
+        &::after {
+          content: "";
+          display: block;
+          background: #cf7403 !important;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+          width: calc(var(--p-size) + 6px * var(--scale));
+          height: calc(var(--p-size) + 6px * var(--scale));
+          z-index: 1;
+        }
+      }
+    }
     .perfect-circle__inner {
+      --p-size: calc(var(--bullet-size) * var(--scale));
       svg {
         display: none;
       }
       &::before {
-        --p-size: calc(24px * var(--scale));
         content: "";
         mask-repeat: no-repeat;
         mask-image: @image;
@@ -29,62 +53,26 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        z-index: 9;
       }
     }
   }
 }
 
 @media (min-width: 600px) {
-  /* 当前焦点rem高亮外边框 */
-  // @keyframes ants {
-  //   100% {
-  //     background-position: 100%;
-  //   }
-  // }
+  .rem-container--default_type-rem-type.rem-container--forwards-practice-enabled,
+  .rem-container--default_type-rem-type.rem-container--backwards-practice-enabled,
+  .rem-container--default_type-rem-type.rem-container--forwards-practice-disabled {
+    .bullet(url("https://browneyedsoul.github.io/ImageRepository/Basic3.svg"), var(--no-practice-color));
+  }
+  .rem-container--concept-rem-type {
+    .bullet(url("https://browneyedsoul.github.io/ImageRepository/Concept.svg"), var(--no-practice-color));
+  }
+  .rem-container--descriptor-rem-type {
+    .bullet(url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg"), var(--no-practice-color));
+  }
 
-  // // .rem-container:hover .rem-text::before {
-  // //   --focus-rem-dashed-color: rgba(255, 166, 0, 0.7);
-  // //   border-width: 1px;
-  // //   animation: none !important;
-  // // }
-  // .rem-container:focus-within/* ,
-  // .rem-container:hover  */ {
-  //   .rem-button__container {
-  //     z-index: 2;
-  //   }
-  //   .rem-text {
-  //     &::before {
-  //       content: "";
-  //       box-sizing: border-box;
-  //       display: block;
-  //       position: absolute;
-  //       left: 0;
-  //       right: 0;
-  //       top: 0;
-  //       bottom: 0;
-  //       border: 3px solid transparent;
-  //       border-radius: 5px;
-  //       background: linear-gradient(var(--focus-rem-bg-color), var(--focus-rem-bg-color))
-  //           padding-box,
-  //         repeating-linear-gradient(
-  //             -45deg,
-  //             var(--focus-rem-dashed-color) 0,
-  //             var(--focus-rem-dashed-color) 25%,
-  //             var(--focus-rem-bg-color) 0,
-  //             var(--focus-rem-bg-color) 50%
-  //           )
-  //           0/1em 1em;
-  //       animation: ants 30s linear infinite;
-  //       pointer-events: none;
-  //       z-index: 1;
-  //     }
-  //     > div {
-  //       z-index: 2;
-  //     }
-  //   }
-  // }
-
-  // 小圆点
+  // Editing 小圆点
   .rem-container:focus-within {
     .plus-button {
       position: relative;
@@ -94,7 +82,7 @@
     }
 
     // .bullet("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2022/07/09/drag.svg", var(--focus-rem-bullet-color));
-    .bullet(url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2022/07/11/chandelier.svg"), var(--focus-rem-bullet-color));
+    // .bullet(url("https://cdn.jsdelivr.net/gh/yoyooyooo/file@main/uPic/2022/07/11/chandelier.svg"), var(--focus-rem-bullet-color), 22px);
 
     // rem 折叠时
     .rem-bullet--hidden-children {

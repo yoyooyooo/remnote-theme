@@ -1,3 +1,19 @@
+.dark
+  .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled
+  .rem-bullet.rem-bullet--hidden-children {
+  background: var(--no-practice-color);
+  width: 1em;
+  height: 1em;
+  -webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
+  mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  position: relative;
+  left: -3px;
+}
+
 .remType(@type, @bgVar, @color, @imageUrl) {
   @{type} > .rem-text > .rich-text-editor > .EditorContainer > div::before,
   @{type} > .rem-text > .EditorContainer:not(.rem-bullet__number):before {
