@@ -6,6 +6,8 @@ remnote 主题
 
 ```css
 @import url("https://remnote-theme.vercel.app/main/index.css");
+// or
+@import url("https://cdn.jsdelivr.net/gh/yoyooyooo/remnote-theme/dist/main/index.css");
 ```
 
 ## 按需引入
