@@ -20,8 +20,10 @@
     text-underline-position: under;
   }
 
-  .rn-code-node {
+  .rn-code-node,
+  #code-node {
     padding: 8px;
+    margin-bottom: 0; // 防止hover/focus的时候高度跳来跳去
   }
 
   // 链接下划线
@@ -29,6 +31,10 @@
     text-underline-position: under;
     color: #3434cf;
     text-decoration-color: #6a6adf;
+  }
+
+  .descriptor_rem_type {
+    font-weight: 700;
   }
 }
 

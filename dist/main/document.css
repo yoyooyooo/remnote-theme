@@ -1,1 +1,56 @@
-@media (min-width:600px){body.light .document-header-top-bar .parent-link+span>svg{position:relative;top:3px}body.light .rem a{color:#3434cf;text-decoration-color:#6a6adf;text-underline-position:under}body.light .rem-reference-link a{text-decoration:none}body.light #document,body.light #document-sidebar,body.light .tile__document,body.light body{color:var(--main-font-color,#555)}body.light #hierarchy-editor>div:nth-child(2)>div>div:nth-child(2)>div>.portal-tree-node-box .rem .rem-container .rem-text>.EditorContainer{border-radius:10px;color:#414141;font-weight:700}body.light #hierarchy-editor>div:nth-child(2)>div>div:nth-child(2)>div>.portal-tree-node-box .TreeNode .rem-text>.EditorContainer{background-color:unset!important;border-radius:0!important;color:var(--main-font-color,#555)!important;font-weight:unset!important}body.light #hierarchy-editor>div:nth-child(2)>div>div:nth-child(2)>div>.portal-tree-node-box .RichTextViewer a{pointer-events:none}body.light #DocumentTitle a img{display:none}body.light #code-node{padding:8px}}
+@media (min-width: 600px) {
+  body.light .document-header-top-bar .parent-link + span > svg {
+    position: relative;
+    top: 3px;
+  }
+  body.light #document,
+  body.light #document-sidebar,
+  body.light .tile__document,
+  body.light body {
+    color: var(--main-font-color, #555);
+  }
+  body.light
+    #hierarchy-editor
+    > div:nth-child(2)
+    > div
+    > div:nth-child(2)
+    > div
+    > .portal-tree-node-box
+    .rem
+    .rem-container
+    .rem-text
+    > .EditorContainer {
+    border-radius: 10px;
+    color: #414141;
+    font-weight: 700;
+  }
+  body.light
+    #hierarchy-editor
+    > div:nth-child(2)
+    > div
+    > div:nth-child(2)
+    > div
+    > .portal-tree-node-box
+    .TreeNode
+    .rem-text
+    > .EditorContainer {
+    background-color: unset !important;
+    border-radius: 0 !important;
+    color: var(--main-font-color, #555) !important;
+    font-weight: unset !important;
+  }
+  body.light
+    #hierarchy-editor
+    > div:nth-child(2)
+    > div
+    > div:nth-child(2)
+    > div
+    > .portal-tree-node-box
+    .RichTextViewer
+    a {
+    pointer-events: none;
+  }
+  body.light #DocumentTitle a img {
+    display: none;
+  }
+}
