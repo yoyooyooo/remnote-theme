@@ -1,9 +1,38 @@
-.bold {
-  color: #36a236;
+// 收起时的箭头， number list 时需要突出下
+.rem {
+  svg.-rotate-90 {
+    filter: drop-shadow(0px 0px 3px #393939);
+    fill: #969696;
+  }
+
+  .bold {
+    color: #36a236;
+  }
+
+  .quote {
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: #e5e5e5;
+  }
+  .underline {
+    text-underline-position: under;
+  }
+
+  .rn-code-node {
+    padding: 8px;
+  }
+
+  // 链接下划线
+  a {
+    text-underline-position: under;
+    color: #3434cf;
+    text-decoration-color: #6a6adf;
+  }
 }
 
-// 收起时的箭头， number list 时需要突出下
-.rem svg.-rotate-90 {
-  filter: drop-shadow(0px 0px 3px #393939);
-  fill: #969696;
+// 块引用内链接去掉下划线
+.rem-reference-link a {
+  text-decoration: none;
 }
