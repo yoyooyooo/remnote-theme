@@ -1,5 +1,4 @@
 :root {
-  --rn-editor-padding: 4px;
   --rn-clr-background-primary: #f6f5f0 !important;
   --main-background-color: var(--rn-clr-background-primary);
   --main-font-color: #555;
@@ -715,6 +714,18 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 0, 0, 0.4);
 }
+.rem-text .RichTextViewer .quote,
+.rem-text [data-slate-node="text"] .quote {
+  background-color: #e5e5e5;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.rem-text .RichTextViewer .underline,
+.rem-text [data-slate-node="text"] .underline {
+  text-underline-position: under;
+}
 .rem-button__container .plus-button,
 .rem-button__container .six-dot {
   background-color: transparent;
@@ -723,6 +734,14 @@
   body.light .document-header-top-bar .parent-link + span > svg {
     position: relative;
     top: 3px;
+  }
+  body.light .rem a {
+    color: #3434cf;
+    text-decoration-color: #6a6adf;
+    text-underline-position: under;
+  }
+  body.light .rem-reference-link a {
+    text-decoration: none;
   }
   body.light #document,
   body.light #document-sidebar,
@@ -773,6 +792,9 @@
   }
   body.light #DocumentTitle a img {
     display: none;
+  }
+  body.light #code-node {
+    padding: 8px;
   }
   #hierarchy-editor__ctrl-f .hierarchy-editor__tag-bar {
     flex-wrap: wrap;
@@ -830,14 +852,6 @@
   }
   [aria-label="Omnibar"] #code-node {
     font-size: 10px !important;
-  }
-}
-@-webkit-keyframes yoyo-spin {
-  0% {
-    transform: rotateY(0);
-  }
-  to {
-    transform: rotateY(1turn);
   }
 }
 @keyframes yoyo-spin {
@@ -1049,44 +1063,16 @@
     position: relative;
   }
   .rem-container:focus-within .rem-bullet {
-    -webkit-animation: yoyo-spin 5s linear infinite;
     animation: yoyo-spin 5s linear infinite;
   }
 }
 .rem-powerup-icon {
   align-items: center;
 }
+.bold {
+  color: #36a236;
+}
 .rem svg.-rotate-90 {
   fill: #969696;
   filter: drop-shadow(0 0 3px #393939);
-}
-.rem .bold {
-  color: #36a236;
-}
-.rem .quote {
-  background-color: #e5e5e5;
-  margin-left: 2px;
-  margin-right: 2px;
-  padding-left: 2px;
-  padding-right: 2px;
-}
-.rem .underline {
-  text-underline-position: under;
-}
-.rem #code-node,
-.rem .rn-code-node {
-  margin-bottom: 0;
-  padding: 8px;
-}
-.rem a {
-  color: #3434cf;
-  -webkit-text-decoration-color: #6a6adf;
-  text-decoration-color: #6a6adf;
-  text-underline-position: under;
-}
-.rem .descriptor_rem_type {
-  font-weight: 700;
-}
-.rem-reference-link a {
-  text-decoration: none;
 }
