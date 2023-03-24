@@ -1,12 +1,27 @@
 .header(@h, @coreColor, @ringColor, @fontSize, @circleWidth) {
+  // indent color
+  // .rn-editor-container > .tree-node--parent:has(.rem-container--header-@{h}) ~ .TreeNode {
+  //   border-color: @coreColor !important;
+  // }
+
   .rem-container--header-@{h} {
     --perfect-circle-width: @circleWidth !important;
     --yoyo-perfect-circle-width: @circleWidth !important;
     --core-color: @coreColor;
 
-    .rem-text {
-      padding-left: 28px;
-    }
+    // // 展开收起箭头
+    // .toggle-collapse-button > svg {
+    //   color: var(--core-color);
+    // }
+    // // 标题文字
+    // .rem-text {
+    //   padding-left: 28px;
+    //   &,
+    //   .EditorContainer,
+    //   .rich-text-editor {
+    //     color: var(--core-color);
+    //   }
+    // }
 
     .rem-bullet__number {
       font-size: @fontSize;
