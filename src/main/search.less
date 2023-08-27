@@ -1,6 +1,7 @@
 @media (min-width: 600px) {
   [aria-label="Omnibar"] {
-    min-width: 1000px !important;
+    min-width: min(1000px, calc(100vw - 40px)) !important;
+    min-height: min(800px, calc(100vh - 40px)) !important;
 
     #code-node {
       font-size: 10px !important;
